@@ -1,0 +1,30 @@
+/* 
+    Document   : custom
+    Created on : 21.09.2011, 14:49:07
+    Author     : begininva
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+body {
+  
+  
+}
+table {
+    
+    
+
+}
+
+
+thead
+{
+    
+    font-weight: inherit;
+    font-style: italic;
+}

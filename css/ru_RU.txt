@@ -1,0 +1,17 @@
+{
+	"sProcessing": "Пожалуйста, подождите ...",
+	"sLengthMenu": "_MENU_ Записи",
+	"sZeroRecords": "Нет записей доступны.",
+	"sInfo": "_START_ bis _END_ von _TOTAL_ Записи",
+	"sInfoEmpty": "0 bis 0 von 0 Einträgen",
+	"sInfoFiltered": "(gefiltert von _MAX_  Записи)",
+	"sInfoPostFix": "",
+	"sSearch": "Поиск",
+	"sUrl": "",
+	"oPaginate": {
+		"sFirst":    "Первый",
+		"sPrevious": "Предыдущий",
+		"sNext":     "Следующий",
+		"sLast":     "Последний"
+	}
+}

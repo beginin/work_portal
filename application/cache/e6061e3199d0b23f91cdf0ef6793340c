@@ -1,0 +1,4097 @@
+1317280546TS--->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+        <title></title>
+        <link rel="stylesheet" href='/css/demo_page.css' type="text/css" media="screen, projection" /> 
+        <link rel="stylesheet" href='/css/demo_table.css' type="text/css" media="screen, projection" />
+        <link rel="shortcut icon" href="/css/favicon.ico" />
+        <link href="/css/mistakes.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="/js/mistakes.js"></script>
+       
+        
+        <script type="text/javascript" language="javascript" src="/js/jquery.js"></script>
+        <script type="text/javascript" language="javascript" src="/js/jquery.dataTables.js"></script>
+       <script type="text/javascript" charset="utf-8">
+			$(document).ready(function() {
+    oTable = $('#example').dataTable({
+        
+         "oLanguage": {
+            "sUrl": "/css/ru_RU.txt"
+        },
+        
+        "fnDrawCallback": function ( oSettings ) {
+            if ( oSettings.aiDisplay.length == 0 )
+            {
+                return;
+            }
+            
+                       
+            var nTrs = $('#example tbody tr');
+             
+            var iColspan = nTrs[0].getElementsByTagName('td').length;
+            var sLastGroup = "";
+            for ( var i=0 ; i<nTrs.length ; i++ )
+            {
+                var iDisplayIndex = oSettings._iDisplayStart + i;
+                var sGroup = oSettings.aoData[ oSettings.aiDisplay[iDisplayIndex] ]._aData[0];
+                if ( sGroup != sLastGroup )
+                {
+                    var nGroup = document.createElement( 'tr' );
+                    var nCell = document.createElement( 'td' );
+                    nCell.colSpan = iColspan;
+                    nCell.className = "group";
+                    nCell.innerHTML = sGroup;
+                    nGroup.appendChild( nCell );
+                    nTrs[i].parentNode.insertBefore( nGroup, nTrs[i] );
+                    sLastGroup = sGroup;
+                }
+            }
+        },
+        "aoColumnDefs": [
+            { "bVisible": false, "aTargets": [ 0 ] }
+        ],
+        "aaSortingFixed": [[ 0, 'asc' ]],
+        "aaSorting": [[ 1, 'asc' ]],
+        "sDom": 'lfr<"giveHeight"t>ip',
+         "bPaginate": false,
+         "bInfo": false
+    });
+} );
+		</script>
+        
+    </head>
+    <body>
+ <nav>
+     <a href="/">Main</a>
+     | <a href="/phonebook/">Телефонный справочник</a> |
+       <a href="/logs/">Пользователи</a> 
+       | <a href="#">Функция 3</a></nav>
+       <p>Для того чтобы сообщить о не корректности информации, необходимо выделить неверный текст и нажать Ctrl + Enter</p><table>
+    <tr>
+        <td valign="top">
+<div>
+                 <a href="#" onclick="
+                                 var id = '8b0de315a0005347a1b72938c8eab5f8';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">managers</a>
+<div id="8b0de315a0005347a1b72938c8eab5f8" style="display: none;">
+<div>
+вход 2011-09-28 17:03:46 PRODAJ-188 </div>
+<div>
+вход 2011-09-28 13:49:26 PRODAJ-213 </div>
+<div>
+вход 2011-09-28 11:25:04 PRODAJ-092 </div>
+<div>
+вход 2011-09-28 10:08:05 PRODAJ-120 </div>
+<div>
+выход 2011-09-28 10:03:00 PRODAJ-120 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '1ee40ccc80901d04ba9356fa6ad19bcf';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">nor-SHR01WXP-KIRENS</a>
+<div id="1ee40ccc80901d04ba9356fa6ad19bcf" style="display: none;">
+<div>
+вход 2011-09-08 14:49:52 nor-SHR01WXP-KIRENS </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '94b63c2f03c4c492c7a2e3792ba8f57c';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">nor-Анастасия Воробец</a>
+<div id="94b63c2f03c4c492c7a2e3792ba8f57c" style="display: none;">
+<div>
+вход 2011-09-22 15:46:17 nor-ASHUKYAVICHUSOS </div>
+<div>
+выход 2011-09-22 15:28:24 nor-ASHUKYAVICHUSOS </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '8c8b4d1d0c9a92f98759b3991d21352c';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">nor-Екатерина Кондратьева</a>
+<div id="8c8b4d1d0c9a92f98759b3991d21352c" style="display: none;">
+<div>
+вход 2011-09-29 09:06:38 nor-FIN-PC1 </div>
+<div>
+выход 2011-09-28 17:59:30 nor-FIN-PC1 </div>
+<div>
+вход 2011-09-28 09:04:30 nor-FIN-PC1 </div>
+<div>
+выход 2011-09-27 18:01:35 nor-FIN-PC1 </div>
+<div>
+вход 2011-09-27 09:03:09 nor-FIN-PC1 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '3ff5a6b15484909b983268c22dff57b4';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">nor-Елена Бережнева</a>
+<div id="3ff5a6b15484909b983268c22dff57b4" style="display: none;">
+<div>
+выход 2011-09-29 12:04:18 nor-BEREZHNEVA </div>
+<div>
+вход 2011-09-29 11:58:16 nor-BEREZHNEVA </div>
+<div>
+выход 2011-09-28 11:21:22 nor-BEREZHNEVA </div>
+<div>
+вход 2011-09-27 10:58:47 nor-BEREZHNEVA </div>
+<div>
+выход 2011-09-26 11:21:48 nor-BEREZHNEVA </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '50085ee2c9e715dc3ef605cfe1c19b1b';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">nor-Елена Н. Лойко</a>
+<div id="50085ee2c9e715dc3ef605cfe1c19b1b" style="display: none;">
+<div>
+вход 2011-09-29 08:17:20 nor-GLAVBUH2 </div>
+<div>
+выход 2011-09-28 17:59:22 nor-GLAVBUH2 </div>
+<div>
+вход 2011-09-28 08:13:10 nor-GLAVBUH2 </div>
+<div>
+выход 2011-09-27 17:58:10 nor-GLAVBUH2 </div>
+<div>
+вход 2011-09-27 08:15:56 nor-GLAVBUH2 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '92748a77d9f8bd0d043108aea00d4c6c';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">nor-Исаев Андрей Викторович</a>
+<div id="92748a77d9f8bd0d043108aea00d4c6c" style="display: none;">
+<div>
+выход 2011-09-09 18:26:49 nor-DERYBINIV </div>
+<div>
+вход 2011-09-09 15:22:10 nor-DERYBINIV </div>
+<div>
+выход 2011-09-08 20:53:31 nor-DERYBINIV </div>
+<div>
+вход 2011-09-08 16:51:11 nor-DERYBINIV </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'e5c51c6f9b7925bd2debc431ca508b2c';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">nor-Людмила В. Полянская</a>
+<div id="e5c51c6f9b7925bd2debc431ca508b2c" style="display: none;">
+<div>
+вход 2011-09-28 09:19:41 nor-GLAVBUH1 </div>
+<div>
+выход 2011-09-27 18:03:51 nor-GLAVBUH1 </div>
+<div>
+вход 2011-09-27 09:09:44 nor-GLAVBUH1 </div>
+<div>
+выход 2011-09-26 17:58:26 nor-GLAVBUH1 </div>
+<div>
+выход 2011-09-26 12:38:15 nor-GLAVBUH1 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '9f5e773be4b0530eef7f1505b4f523fe';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">nor-Марина Нечкина</a>
+<div id="9f5e773be4b0530eef7f1505b4f523fe" style="display: none;">
+<div>
+вход 2011-09-13 08:58:29 nor-NECHKINAMM </div>
+<div>
+выход 2011-09-12 18:05:42 nor-NECHKINAMM </div>
+<div>
+вход 2011-09-12 08:58:00 nor-NECHKINAMM </div>
+<div>
+выход 2011-09-08 18:03:49 nor-NECHKINAMM </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '54cb358191c2aad11412d2b7e0c45c0c';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">nor-Нечкина Марина Михайловна</a>
+<div id="54cb358191c2aad11412d2b7e0c45c0c" style="display: none;">
+<div>
+вход 2011-09-29 13:09:13 nor-NECHKINAMM </div>
+<div>
+выход 2011-09-28 17:53:48 nor-NECHKINAMM </div>
+<div>
+вход 2011-09-28 11:17:33 nor-NECHKINAMM </div>
+<div>
+выход 2011-09-27 17:55:50 nor-NECHKINAMM </div>
+<div>
+вход 2011-09-27 09:17:03 nor-NECHKINAMM </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '3332c0cc5556fc04362075e693ee321d';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">nor-Олеся Мишко</a>
+<div id="3332c0cc5556fc04362075e693ee321d" style="display: none;">
+<div>
+вход 2011-09-29 10:21:54 nor-PUSTOSCHILOVA </div>
+<div>
+выход 2011-09-28 17:59:07 nor-PUSTOSCHILOVA </div>
+<div>
+вход 2011-09-28 09:18:50 nor-PUSTOSCHILOVA </div>
+<div>
+выход 2011-09-27 17:58:44 nor-PUSTOSCHILOVA </div>
+<div>
+вход 2011-09-27 09:19:01 nor-PUSTOSCHILOVA </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'bcdff2d6ea15cd12346a84a6ad4e50c9';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">nor-Савыкина Кристина Андреевна</a>
+<div id="bcdff2d6ea15cd12346a84a6ad4e50c9" style="display: none;">
+<div>
+вход 2011-09-29 09:12:10 nor-SEKRETAR-R331 </div>
+<div>
+выход 2011-09-28 17:49:32 nor-SEKRETAR-R331 </div>
+<div>
+вход 2011-09-28 10:28:58 nor-SEKRETAR-R331 </div>
+<div>
+вход 2011-09-28 09:25:12 nor-SEKRETAR-R331 </div>
+<div>
+выход 2011-09-27 19:18:41 nor-SEKRETAR-R331 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '3cae9061d448f330d22e9ca4c06fc340';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">nor-Светлана Кольман</a>
+<div id="3cae9061d448f330d22e9ca4c06fc340" style="display: none;">
+<div>
+вход 2011-09-29 09:20:20 nor-MTS2 </div>
+<div>
+выход 2011-09-28 14:55:12 nor-MTS2 </div>
+<div>
+вход 2011-09-28 09:18:06 nor-MTS2 </div>
+<div>
+выход 2011-09-27 17:46:34 nor-MTS2 </div>
+<div>
+вход 2011-09-27 09:07:06 nor-MTS2 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'cb7beb481c46fc551dcb7ed630c1df04';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">nor-Светлана Сиско</a>
+<div id="cb7beb481c46fc551dcb7ed630c1df04" style="display: none;">
+<div>
+вход 2011-09-27 15:55:11 nor-OSA1 </div>
+<div>
+выход 2011-09-27 15:51:10 nor-OSA1 </div>
+<div>
+вход 2011-09-27 15:33:49 nor-OSA1 </div>
+<div>
+выход 2011-09-27 15:26:41 nor-OSA1 </div>
+<div>
+вход 2011-09-26 16:48:48 nor-OSA1 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'f03e2a57f50659a76df91f4e4b72f4e0';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">nor-Сергей Тепляков</a>
+<div id="f03e2a57f50659a76df91f4e4b72f4e0" style="display: none;">
+<div>
+вход 2011-09-29 12:46:45 nor-FIN-PC2 </div>
+<div>
+выход 2011-09-27 18:04:32 nor-FIN-PC2 </div>
+<div>
+вход 2011-09-27 09:08:56 nor-FIN-PC2 </div>
+<div>
+выход 2011-09-26 18:04:30 nor-FIN-PC2 </div>
+<div>
+вход 2011-09-26 13:17:46 nor-FIN-PC2 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'f99eae7fe03cba5c7e4f8acd546c74bb';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">nor-Станислав Волков</a>
+<div id="f99eae7fe03cba5c7e4f8acd546c74bb" style="display: none;">
+<div>
+вход 2011-09-15 15:52:39 nor-VOLKOVS-NOUT </div>
+<div>
+вход 2011-09-14 08:50:48 nor-VOLKOVS-NOUT </div>
+<div>
+выход 2011-09-14 08:46:25 nor-VOLKOVS-NOUT </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '58e27ba1ce7329f265bad665d310ae93';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">nor-Татьяна А. Юрастова</a>
+<div id="58e27ba1ce7329f265bad665d310ae93" style="display: none;">
+<div>
+вход 2011-09-29 09:13:03 nor-UO-R796 </div>
+<div>
+выход 2011-09-28 17:57:01 nor-UO-R796 </div>
+<div>
+вход 2011-09-28 09:28:27 nor-UO-R796 </div>
+<div>
+выход 2011-09-27 18:09:22 nor-UO-R796 </div>
+<div>
+вход 2011-09-27 09:15:38 nor-UO-R796 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '89b1266171febcfa20d780f3051dbe5d';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">nor-Юрий П. Юхно</a>
+<div id="89b1266171febcfa20d780f3051dbe5d" style="display: none;">
+<div>
+вход 2011-09-29 09:55:11 nor-UHNO </div>
+<div>
+выход 2011-09-29 09:53:19 nor-UHNO </div>
+<div>
+вход 2011-09-29 09:20:13 nor-UHNO </div>
+<div>
+выход 2011-09-28 14:52:46 nor-UHNO </div>
+<div>
+вход 2011-09-28 09:16:47 nor-UHNO </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '23a9cf1a489b159df0d4ee6f545c4b5e';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">pyankov adm</a>
+<div id="23a9cf1a489b159df0d4ee6f545c4b5e" style="display: none;">
+<div>
+вход 2011-09-05 16:25:47 ADD </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '3b39d19a8491f035e2fd9c96785a4583';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">zaytsev adm</a>
+<div id="3b39d19a8491f035e2fd9c96785a4583" style="display: none;">
+<div>
+выход 2011-09-16 15:10:19 MARKETING-028 </div>
+<div>
+вход 2011-09-16 15:06:12 MARKETING-028 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'a0faded8e585c5c5476e3ebc4fc3dd4c';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Беллер М В</a>
+<div id="a0faded8e585c5c5476e3ebc4fc3dd4c" style="display: none;">
+<div>
+вход 2011-08-29 09:42:11 ABONSLN-341 </div>
+<div>
+выход 2011-08-26 20:04:21 ABONSLN-341 </div>
+<div>
+выход 2011-08-24 20:13:25 KASSA </div>
+<div>
+вход 2011-08-24 19:53:35 KASSA </div>
+<div>
+выход 2011-08-23 20:12:31 KASSA </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'ff67aaa7902c78f21cb2703a2200c5f9';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Беллер Мария Владимировна</a>
+<div id="ff67aaa7902c78f21cb2703a2200c5f9" style="display: none;">
+<div>
+вход 2011-09-29 09:40:04 ABONSLN-341 </div>
+<div>
+выход 2011-09-28 17:26:25 ABONSLN-341 </div>
+<div>
+вход 2011-09-28 15:40:21 ABONSLN-341 </div>
+<div>
+выход 2011-09-28 15:36:29 ABONSLN-341 </div>
+<div>
+вход 2011-09-28 09:41:44 ABONSLN-341 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '8f41a1340c0439b8096463dcb2d22c63';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Агаян Елена Борисовна</a>
+<div id="8f41a1340c0439b8096463dcb2d22c63" style="display: none;">
+<div>
+вход 2011-09-29 14:47:13 BUH-111 </div>
+<div>
+выход 2011-09-29 14:45:36 BUH-111 </div>
+<div>
+вход 2011-09-29 10:24:29 BUH-111 </div>
+<div>
+выход 2011-09-28 17:49:00 BUH-111 </div>
+<div>
+вход 2011-09-28 16:58:27 BUH-111 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '167695e208f38edc958174302f40469c';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Алексеева Любовь Юрьевна</a>
+<div id="167695e208f38edc958174302f40469c" style="display: none;">
+<div>
+вход 2011-09-29 09:41:59 KASSA </div>
+<div>
+вход 2011-09-28 09:44:05 KASSA </div>
+<div>
+вход 2011-09-27 10:30:34 KASSA </div>
+<div>
+вход 2011-09-23 10:09:19 KASSA </div>
+<div>
+выход 2011-09-22 20:01:02 KASSA </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'c8543c2b529e5090bba2cb4bcd00aaa7';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Анашкин Сергей Владимирович</a>
+<div id="c8543c2b529e5090bba2cb4bcd00aaa7" style="display: none;">
+<div>
+выход 2011-09-28 18:00:27 AHO-025 </div>
+<div>
+вход 2011-09-28 15:21:55 AHO-025 </div>
+<div>
+выход 2011-09-28 15:18:29 AHO-025 </div>
+<div>
+вход 2011-09-28 10:46:14 AHO-025 </div>
+<div>
+выход 2011-09-28 10:42:58 AHO-025 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '7ab6379774e00477f2b6bac662f8077a';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Арлакова Анна Владимировна</a>
+<div id="7ab6379774e00477f2b6bac662f8077a" style="display: none;">
+<div>
+выход 2011-09-16 20:59:22 CALLCENTER-239 </div>
+<div>
+вход 2011-09-16 11:57:54 CALLCENTER-239 </div>
+<div>
+выход 2011-09-15 18:05:07 CALLCENTER-239 </div>
+<div>
+вход 2011-09-15 08:56:47 CALLCENTER-239 </div>
+<div>
+выход 2011-09-14 17:10:32 CALLCENTER-239 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '8e3fdcd934e2f4c642b2a357cc7688e4';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Арлакова Галина Фоминична</a>
+<div id="8e3fdcd934e2f4c642b2a357cc7688e4" style="display: none;">
+<div>
+вход 2011-09-26 13:10:34 CALLCENTER-023 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '3ca081d6c8f11ce52c3ab52c8ce92b4b';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Бабахина Татьяна Игоревна</a>
+<div id="3ca081d6c8f11ce52c3ab52c8ce92b4b" style="display: none;">
+<div>
+выход 2011-09-16 12:58:07 BABAHINATI-115 </div>
+<div>
+вход 2011-09-16 12:57:21 BABAHINATI-115 </div>
+<div>
+выход 2011-09-16 12:35:02 BABAHINATI-115 </div>
+<div>
+вход 2011-09-16 08:32:53 BABAHINATI-115 </div>
+<div>
+выход 2011-09-15 17:35:19 BABAHINATI-115 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'bd87815f2dfb5cd846611aa8ff5d29f0';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Бегинин Владимир</a>
+<div id="bd87815f2dfb5cd846611aa8ff5d29f0" style="display: none;">
+<div>
+вход 2011-09-28 14:49:38 TO-196 </div>
+<div>
+выход 2011-09-27 16:54:14 BABAHINATI-115 </div>
+<div>
+вход 2011-09-27 16:40:43 BABAHINATI-115 </div>
+<div>
+выход 2011-09-26 12:13:45 TO-196 </div>
+<div>
+вход 2011-09-26 12:10:33 TO-196 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '7cb5c8f5b2d659195ca5099954006c3e';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Бегинин Владимир Александрович</a>
+<div id="7cb5c8f5b2d659195ca5099954006c3e" style="display: none;">
+<div>
+выход 2011-09-05 16:18:51 TO-196 </div>
+<div>
+вход 2011-09-05 10:46:37 TO-196 </div>
+<div>
+выход 2011-09-05 10:43:57 TO-196 </div>
+<div>
+вход 2011-09-05 10:35:37 TO-196 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '8d4889fa684a622536adcbfc1c47a202';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Богодухов Андрей Михайлович</a>
+<div id="8d4889fa684a622536adcbfc1c47a202" style="display: none;">
+<div>
+вход 2011-09-29 09:17:10 EXP-400 </div>
+<div>
+выход 2011-09-28 17:56:00 EXP-400 </div>
+<div>
+вход 2011-09-28 09:50:07 EXP-400 </div>
+<div>
+выход 2011-09-27 19:40:21 EXP-400 </div>
+<div>
+вход 2011-09-27 17:40:40 EXP-400 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '3984e1b9cf55259836abb07f8a3befa6';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Васильева Наталья Николаевна</a>
+<div id="3984e1b9cf55259836abb07f8a3befa6" style="display: none;">
+<div>
+вход 2011-09-26 13:28:24 MARKETING-056 </div>
+<div>
+вход 2011-09-26 08:22:14 MARKETING-056 </div>
+<div>
+вход 2011-09-22 09:11:31 MARKETING-056 </div>
+<div>
+вход 2011-09-19 09:15:42 MARKETING-056 </div>
+<div>
+выход 2011-09-16 18:48:41 MARKETING-056 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'af0524e76eeb665dc1d0666c452fc7c6';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Вдовенко Валентина Анатольевна</a>
+<div id="af0524e76eeb665dc1d0666c452fc7c6" style="display: none;">
+<div>
+вход 2011-09-29 10:38:20 ABONVRN-187 </div>
+<div>
+выход 2011-09-28 20:10:07 ABONVRN-187 </div>
+<div>
+вход 2011-09-23 08:25:40 ABONVRN-187 </div>
+<div>
+выход 2011-09-21 17:42:33 ABONVRN-187 </div>
+<div>
+вход 2011-09-19 10:55:49 ABONVRN-187 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'e362c875d01ad80bad54fecc381e52d9';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Вершинин Константин Михайлович</a>
+<div id="e362c875d01ad80bad54fecc381e52d9" style="display: none;">
+<div>
+выход 2011-09-08 17:15:04 OKP-050 </div>
+<div>
+вход 2011-08-18 10:25:14 OKP-050 </div>
+<div>
+выход 2011-08-18 10:16:28 OKP-050 </div>
+<div>
+вход 2011-08-17 09:30:54 OKP-050 </div>
+<div>
+выход 2011-08-16 18:04:26 OKP-050 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '956e38f74f52330cc61089e21e693f5d';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Воеводина Анастасия Владимировна</a>
+<div id="956e38f74f52330cc61089e21e693f5d" style="display: none;">
+<div>
+вход 2011-09-28 14:49:43 MARKETING-028 </div>
+<div>
+выход 2011-09-28 14:45:01 MARKETING-028 </div>
+<div>
+вход 2011-09-26 13:59:26 MARKETING-028 </div>
+<div>
+вход 2011-09-19 09:47:32 MARKETING-028 </div>
+<div>
+выход 2011-09-16 18:01:07 MARKETING-028 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '5719568524b485e57428c1f73603b91f';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Вычужанина Светлана Сергеевна</a>
+<div id="5719568524b485e57428c1f73603b91f" style="display: none;">
+<div>
+вход 2011-09-29 09:13:00 VYCHYZANINA-BUH </div>
+<div>
+выход 2011-09-28 17:46:57 VYCHYZANINA-BUH </div>
+<div>
+вход 2011-09-28 08:58:51 VYCHYZANINA-BUH </div>
+<div>
+выход 2011-09-27 17:46:18 VYCHYZANINA-BUH </div>
+<div>
+вход 2011-09-27 09:17:49 VYCHYZANINA-BUH </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '95aa50a19b9a581a65f25de4dcfff1a8';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Гаврилова Ирина Евгеньевна</a>
+<div id="95aa50a19b9a581a65f25de4dcfff1a8" style="display: none;">
+<div>
+вход 2011-09-29 08:30:53 BUH-045 </div>
+<div>
+выход 2011-09-28 18:02:30 BUH-045 </div>
+<div>
+вход 2011-09-28 08:34:55 BUH-045 </div>
+<div>
+выход 2011-09-27 17:23:23 BUH-045 </div>
+<div>
+вход 2011-09-27 08:41:02 BUH-045 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'c7ad67aaf8be170e12bdeae5a1c1eb55';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Глазкова Наталья Николаевна</a>
+<div id="c7ad67aaf8be170e12bdeae5a1c1eb55" style="display: none;">
+<div>
+вход 2011-09-29 07:27:10 SEKRETAR </div>
+<div>
+выход 2011-09-28 17:03:31 SEKRETAR </div>
+<div>
+вход 2011-09-26 08:39:42 SEKRETAR </div>
+<div>
+выход 2011-09-23 16:32:53 SEKRETAR </div>
+<div>
+вход 2011-09-23 07:32:49 SEKRETAR </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '55b924309aa776bc5f9fc8331a178004';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Гордовенко Юлия Андреевна</a>
+<div id="55b924309aa776bc5f9fc8331a178004" style="display: none;">
+<div>
+вход 2011-09-28 11:49:21 CALLCENTER-104 </div>
+<div>
+выход 2011-09-27 18:24:32 CALLCENTER-104 </div>
+<div>
+вход 2011-09-27 08:58:13 CALLCENTER-104 </div>
+<div>
+выход 2011-09-27 08:56:06 CALLCENTER-104 </div>
+<div>
+вход 2011-09-27 08:54:33 CALLCENTER-104 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '5b65374d75b92e67bb165bba32fe815e';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Гришко Инна Владимировна</a>
+<div id="5b65374d75b92e67bb165bba32fe815e" style="display: none;">
+<div>
+вход 2011-09-12 10:55:47 NACH_CALL </div>
+<div>
+выход 2011-09-12 10:54:36 NACH_CALL </div>
+<div>
+вход 2011-09-12 10:53:48 NACH_CALL </div>
+<div>
+выход 2011-09-12 10:52:50 NACH_CALL </div>
+<div>
+вход 2011-09-12 10:47:58 NACH_CALL </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '07699864712408a1e930fe612459cbe4';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Данилина Елена Александровна</a>
+<div id="07699864712408a1e930fe612459cbe4" style="display: none;">
+<div>
+вход 2011-09-29 08:35:30 MARKETING-257 </div>
+<div>
+выход 2011-09-28 15:55:51 MARKETING-257 </div>
+<div>
+вход 2011-09-28 08:47:45 MARKETING-257 </div>
+<div>
+выход 2011-09-27 19:35:43 MARKETING-257 </div>
+<div>
+вход 2011-09-27 09:27:14 MARKETING-257 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'c5d17626769a660a3b118b74d2a36612';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Дежурный техник КТВ</a>
+<div id="c5d17626769a660a3b118b74d2a36612" style="display: none;">
+<div>
+вход 2011-09-12 16:43:50 EXP-225 </div>
+<div>
+вход 2011-09-10 09:11:59 EXP-225 </div>
+<div>
+выход 2011-09-10 09:01:05 EXP-225 </div>
+<div>
+вход 2011-08-29 09:03:44 EXP-225 </div>
+<div>
+вход 2011-08-28 22:13:59 EXP-225 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '4071f670a5284272c6a5422258dd4c19';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Демьяненко Наталья Владимировна</a>
+<div id="4071f670a5284272c6a5422258dd4c19" style="display: none;">
+<div>
+вход 2011-09-29 10:37:47 CALLCENTER-012 </div>
+<div>
+выход 2011-09-28 17:00:47 CALLCENTER-012 </div>
+<div>
+вход 2011-09-28 07:56:09 CALLCENTER-012 </div>
+<div>
+выход 2011-09-27 21:00:09 CALLCENTER-012 </div>
+<div>
+вход 2011-09-27 11:53:58 CALLCENTER-012 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'c9686fe7404e3c9ecbb21b2eb443e9dc';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Дмитрий И. Пьянков</a>
+<div id="c9686fe7404e3c9ecbb21b2eb443e9dc" style="display: none;">
+<div>
+выход 2011-09-17 19:03:23 TO-204 </div>
+<div>
+вход 2011-08-29 14:13:49 TO-204 </div>
+<div>
+выход 2011-08-24 16:42:02 TO-091 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '3956190522305f106cf66b7e834c4187';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Дрень Ольга Геннадьевна</a>
+<div id="3956190522305f106cf66b7e834c4187" style="display: none;">
+<div>
+вход 2011-09-29 07:55:10 RASCHGROUP-160 </div>
+<div>
+выход 2011-09-28 17:04:21 RASCHGROUP-160 </div>
+<div>
+вход 2011-09-28 08:03:27 RASCHGROUP-160 </div>
+<div>
+выход 2011-09-27 17:02:19 RASCHGROUP-160 </div>
+<div>
+вход 2011-09-27 07:58:51 RASCHGROUP-160 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '41a22ec6bf7060f41a139a9d90574679';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Елизарова Татьяна Тимофеевна</a>
+<div id="41a22ec6bf7060f41a139a9d90574679" style="display: none;">
+<div>
+вход 2011-09-29 08:00:53 ABONKL-230 </div>
+<div>
+выход 2011-09-28 16:55:38 ABONKL-230 </div>
+<div>
+вход 2011-09-28 09:10:52 ABONKL-230 </div>
+<div>
+выход 2011-09-28 09:08:48 ABONKL-230 </div>
+<div>
+вход 2011-09-28 09:08:28 ABONKL-230 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '0ee0cf2e9ceea6ff57a0fd3a95ae7c22';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Еникеев Максим Радикович</a>
+<div id="0ee0cf2e9ceea6ff57a0fd3a95ae7c22" style="display: none;">
+<div>
+выход 2011-09-26 11:08:15 TO-204 </div>
+<div>
+вход 2011-09-25 14:09:38 TO-204 </div>
+<div>
+выход 2011-09-10 17:27:14 TO-008 </div>
+<div>
+вход 2011-09-10 16:21:16 TO-008 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'f0c2f967ee494260bbd8c600bbb9c850';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Жукова Любовь Леонидовна</a>
+<div id="f0c2f967ee494260bbd8c600bbb9c850" style="display: none;">
+<div>
+вход 2011-09-29 09:16:43 OKP-054 </div>
+<div>
+выход 2011-09-28 18:18:17 OKP-054 </div>
+<div>
+вход 2011-09-28 09:18:11 OKP-054 </div>
+<div>
+выход 2011-09-27 18:04:30 OKP-054 </div>
+<div>
+вход 2011-09-27 09:02:22 OKP-054 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'e36a1a30222324c63f4d1bef984aa070';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Зайцев Михаил Юрьевич</a>
+<div id="e36a1a30222324c63f4d1bef984aa070" style="display: none;">
+<div>
+вход 2011-09-26 10:05:48 OTP-ZAYTSEV397 </div>
+<div>
+выход 2011-09-23 19:03:00 OTP-ZAYTSEV397 </div>
+<div>
+вход 2011-09-23 10:22:14 OTP-ZAYTSEV397 </div>
+<div>
+выход 2011-09-22 19:11:26 OTP-ZAYTSEV397 </div>
+<div>
+вход 2011-09-19 10:19:07 OTP-ZAYTSEV397 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '442a2d0926af493e7305d6e2faf5969c';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Заяц Мария Валерьевна</a>
+<div id="442a2d0926af493e7305d6e2faf5969c" style="display: none;">
+<div>
+вход 2011-09-29 12:02:42 CALLCENTER-015 </div>
+<div>
+выход 2011-09-28 22:32:39 CALLCENTER-015 </div>
+<div>
+вход 2011-09-28 12:03:39 CALLCENTER-015 </div>
+<div>
+выход 2011-09-27 23:01:14 CALLCENTER-015 </div>
+<div>
+вход 2011-09-27 13:46:05 CALLCENTER-015 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '84942f6c47429408c251975cbdd7c9cd';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Зборомирский Виктор Борисович</a>
+<div id="84942f6c47429408c251975cbdd7c9cd" style="display: none;">
+<div>
+вход 2011-09-29 09:06:41 EXP-134 </div>
+<div>
+вход 2011-09-28 09:03:54 EXP-134 </div>
+<div>
+выход 2011-09-27 18:08:35 EXP-134 </div>
+<div>
+вход 2011-09-27 09:13:06 EXP-134 </div>
+<div>
+выход 2011-09-26 16:50:16 EXP-134 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '1319dcf0005b428a80a762b2e20d59f5';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Зуева Наталья Александровна</a>
+<div id="1319dcf0005b428a80a762b2e20d59f5" style="display: none;">
+<div>
+вход 2011-09-29 11:01:40 ABONKL-177 </div>
+<div>
+выход 2011-09-28 20:11:50 ABONKL-177 </div>
+<div>
+вход 2011-09-28 11:02:54 ABONKL-177 </div>
+<div>
+выход 2011-09-27 20:02:10 ABONKL-177 </div>
+<div>
+вход 2011-09-27 11:03:16 ABONKL-177 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'ed3af36d7e3ee9fffda295ba41e0e3ee';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Иванова Татьяна Александровна</a>
+<div id="ed3af36d7e3ee9fffda295ba41e0e3ee" style="display: none;">
+<div>
+выход 2011-09-02 20:15:55 RECEPTION </div>
+<div>
+вход 2011-09-02 09:06:25 RECEPTION </div>
+<div>
+выход 2011-09-01 18:07:01 RECEPTION </div>
+<div>
+вход 2011-09-01 17:25:58 RECEPTION </div>
+<div>
+выход 2011-09-01 17:22:07 RECEPTION </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'ad992cd668bccf48c2ae53fd69976af0';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Какаулина Надежда Владимировна</a>
+<div id="ad992cd668bccf48c2ae53fd69976af0" style="display: none;">
+<div>
+вход 2011-09-29 09:00:10 ABONKL-220 </div>
+<div>
+выход 2011-09-28 17:58:43 ABONKL-220 </div>
+<div>
+вход 2011-09-28 10:28:29 ABONKL-220 </div>
+<div>
+выход 2011-09-28 10:23:05 ABONKL-220 </div>
+<div>
+вход 2011-09-28 09:01:43 ABONKL-220 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '22411acb9b7046ffbc3aa9cc7a83ea26';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Карчава Иван Зазович</a>
+<div id="22411acb9b7046ffbc3aa9cc7a83ea26" style="display: none;">
+<div>
+вход 2011-09-29 08:45:07 CALLCENTER-021 </div>
+<div>
+выход 2011-09-28 19:05:14 CALLCENTER-021 </div>
+<div>
+вход 2011-09-28 09:19:37 CALLCENTER-021 </div>
+<div>
+выход 2011-09-27 17:00:51 CALLCENTER-021 </div>
+<div>
+вход 2011-09-27 07:49:59 CALLCENTER-021 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '9d3ffe99d3245ee6299f009cb14b54d3';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Китова Мария Александровна</a>
+<div id="9d3ffe99d3245ee6299f009cb14b54d3" style="display: none;">
+<div>
+вход 2011-09-29 08:38:55 BUH-367 </div>
+<div>
+выход 2011-09-28 17:59:21 BUH-367 </div>
+<div>
+вход 2011-09-28 08:42:22 BUH-367 </div>
+<div>
+выход 2011-09-27 17:23:44 BUH-367 </div>
+<div>
+вход 2011-09-27 08:49:32 BUH-367 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'bb9378897ad21eaa9e2f972646fed9eb';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Клубенко Н А</a>
+<div id="bb9378897ad21eaa9e2f972646fed9eb" style="display: none;">
+<div>
+вход 2011-09-19 11:08:09 BABAHINATI-115 </div>
+<div>
+выход 2011-09-17 17:03:51 ABONVRN-187 </div>
+<div>
+вход 2011-09-17 11:51:17 ABONVRN-187 </div>
+<div>
+выход 2011-09-17 11:47:03 ABONVRN-187 </div>
+<div>
+вход 2011-09-15 11:39:50 ABONVRN-187 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '5097d553316d11835f76da2f2de69915';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Клубенко Наталья Александровна</a>
+<div id="5097d553316d11835f76da2f2de69915" style="display: none;">
+<div>
+выход 2011-09-28 18:14:11 ABONVRN-170 </div>
+<div>
+вход 2011-09-28 18:11:28 ABONVRN-170 </div>
+<div>
+вход 2011-09-28 10:22:56 BABAHINATI-115 </div>
+<div>
+выход 2011-09-27 17:29:02 BABAHINATI-115 </div>
+<div>
+выход 2011-09-27 17:24:26 ABONVRN-166 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '64bcd634f2e5118437e7c544ffc88571';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Клубенко Светлана А.</a>
+<div id="64bcd634f2e5118437e7c544ffc88571" style="display: none;">
+<div>
+вход 2011-09-22 08:13:46 RASCHGROUP-162 </div>
+<div>
+выход 2011-09-21 17:01:23 RASCHGROUP-162 </div>
+<div>
+вход 2011-09-19 07:52:30 RASCHGROUP-162 </div>
+<div>
+выход 2011-09-16 16:58:46 RASCHGROUP-162 </div>
+<div>
+вход 2011-09-16 08:31:19 RASCHGROUP-162 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '8cd4e76f6aa10b5d0dda264f11fc35c2';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Клубенко Светлана Анатольевна</a>
+<div id="8cd4e76f6aa10b5d0dda264f11fc35c2" style="display: none;">
+<div>
+вход 2011-09-28 07:53:51 RASCHGROUP-332 </div>
+<div>
+выход 2011-09-27 17:01:24 RASCHGROUP-332 </div>
+<div>
+вход 2011-09-27 08:09:52 RASCHGROUP-332 </div>
+<div>
+выход 2011-09-26 16:56:42 RASCHGROUP-332 </div>
+<div>
+вход 2011-09-26 13:40:46 RASCHGROUP-332 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'abd6c87f7f48c1d48e56aaf92ff0f0b3';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Коваленко Е А</a>
+<div id="abd6c87f7f48c1d48e56aaf92ff0f0b3" style="display: none;">
+<div>
+вход 2011-09-22 10:50:14 CALLCENTER-323 </div>
+<div>
+выход 2011-09-22 10:43:06 CALLCENTER-323 </div>
+<div>
+вход 2011-09-16 13:20:05 CALLCENTER-323 </div>
+<div>
+выход 2011-09-15 17:00:42 CALLCENTER-323 </div>
+<div>
+вход 2011-09-15 07:23:48 CALLCENTER-323 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'b5c95440adc877e7526e5292f16a1441';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Коваленко Елизавета Андреевна</a>
+<div id="b5c95440adc877e7526e5292f16a1441" style="display: none;">
+<div>
+вход 2011-09-29 12:03:59 CALLCENTER-323 </div>
+<div>
+выход 2011-09-28 23:00:08 CALLCENTER-323 </div>
+<div>
+вход 2011-09-28 13:52:14 CALLCENTER-323 </div>
+<div>
+выход 2011-09-27 22:24:07 CALLCENTER-323 </div>
+<div>
+вход 2011-09-27 10:44:28 CALLCENTER-323 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '19f98f184be35a9a22b12ed73a728b12';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Коваленко Татьяна Николаевна</a>
+<div id="19f98f184be35a9a22b12ed73a728b12" style="display: none;">
+<div>
+вход 2011-09-29 09:07:20 KOVALENKO-BUH </div>
+<div>
+выход 2011-09-28 18:00:23 KOVALENKO-BUH </div>
+<div>
+вход 2011-09-28 09:06:34 KOVALENKO-BUH </div>
+<div>
+выход 2011-09-27 18:11:15 KOVALENKO-BUH </div>
+<div>
+вход 2011-09-27 09:11:28 KOVALENKO-BUH </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'b2fec49975553abee03a195bed671917';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Козлов Андрей Юрьевич</a>
+<div id="b2fec49975553abee03a195bed671917" style="display: none;">
+<div>
+вход 2011-09-27 13:01:03 TO-005 </div>
+<div>
+выход 2011-09-27 11:49:12 TO-005 </div>
+<div>
+вход 2011-09-26 13:00:30 TO-005 </div>
+<div>
+вход 2011-09-22 09:07:53 TO-005 </div>
+<div>
+вход 2011-09-19 14:08:12 TO-005 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '42465e89bea42ac3dbfda9b2076d0b92';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Коновалов И В</a>
+<div id="42465e89bea42ac3dbfda9b2076d0b92" style="display: none;">
+<div>
+вход 2011-09-19 08:10:15 CALLCENTER-018 </div>
+<div>
+выход 2011-09-18 21:00:34 CALLCENTER-018 </div>
+<div>
+вход 2011-09-18 13:11:58 CALLCENTER-018 </div>
+<div>
+выход 2011-09-17 23:00:44 CALLCENTER-018 </div>
+<div>
+вход 2011-09-17 15:31:09 CALLCENTER-018 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '0731da22e0ac3231a637dc7254309a46';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Коновалов Иван Валерьевич</a>
+<div id="0731da22e0ac3231a637dc7254309a46" style="display: none;">
+<div>
+выход 2011-09-28 19:00:44 CALLCENTER-018 </div>
+<div>
+вход 2011-09-28 09:11:06 CALLCENTER-018 </div>
+<div>
+выход 2011-09-27 19:02:00 CALLCENTER-018 </div>
+<div>
+вход 2011-09-27 10:08:45 CALLCENTER-018 </div>
+<div>
+выход 2011-09-26 16:00:18 CALLCENTER-018 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'ac9f9d13ac225e51e182e09e0bc789f6';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Коновалова Ксения Александровна</a>
+<div id="ac9f9d13ac225e51e182e09e0bc789f6" style="display: none;">
+<div>
+вход 2011-09-29 12:05:21 CALLCENTER-296 </div>
+<div>
+выход 2011-09-27 15:31:43 CALLCENTER-296 </div>
+<div>
+вход 2011-09-27 10:41:13 CALLCENTER-296 </div>
+<div>
+выход 2011-09-26 14:04:05 CALLCENTER-296 </div>
+<div>
+вход 2011-09-26 13:05:02 CALLCENTER-296 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '379cb181712c13dfa24ae559792549e2';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Конончук Екатерина Николаевна</a>
+<div id="379cb181712c13dfa24ae559792549e2" style="display: none;">
+<div>
+вход 2011-09-29 09:59:47 CALLCENTER-017 </div>
+<div>
+выход 2011-09-28 17:14:04 CALLCENTER-017 </div>
+<div>
+вход 2011-09-28 07:53:04 CALLCENTER-017 </div>
+<div>
+выход 2011-09-25 22:59:46 CALLCENTER-017 </div>
+<div>
+вход 2011-09-25 14:58:58 CALLCENTER-017 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '18bcfa6df716b52107f536b0b5a611dc';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Корнаухов Андрей Викторовия</a>
+<div id="18bcfa6df716b52107f536b0b5a611dc" style="display: none;">
+<div>
+вход 2011-09-26 17:00:03 PRODAJ-217 </div>
+<div>
+выход 2011-09-26 16:49:42 PRODAJ-217 </div>
+<div>
+вход 2011-09-26 14:32:57 PRODAJ-217 </div>
+<div>
+вход 2011-09-23 11:37:19 PRODAJ-217 </div>
+<div>
+вход 2011-09-23 11:30:42 PRODAJ-217 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'd9388ca743a00a21b59b28e96063c6ce';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Кривец Владимир Николаевич</a>
+<div id="d9388ca743a00a21b59b28e96063c6ce" style="display: none;">
+<div>
+вход 2011-09-29 08:19:42 EXP-347 </div>
+<div>
+выход 2011-09-28 17:29:01 EXP-347 </div>
+<div>
+вход 2011-09-28 08:14:39 EXP-347 </div>
+<div>
+выход 2011-09-27 17:45:21 EXP-347 </div>
+<div>
+вход 2011-09-27 08:08:55 EXP-347 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '0976e4d19f5ce0ded9b1c08ecd5edbfb';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Кузнецова Мария Олеговна</a>
+<div id="0976e4d19f5ce0ded9b1c08ecd5edbfb" style="display: none;">
+<div>
+вход 2011-09-26 14:07:50 CALLCENTER-239 </div>
+<div>
+вход 2011-09-26 10:46:35 CALLCENTER-239 </div>
+<div>
+выход 2011-09-23 17:00:17 CALLCENTER-239 </div>
+<div>
+вход 2011-09-15 10:58:02 CALLCENTER-017 </div>
+<div>
+выход 2011-09-13 17:45:44 CALLCENTER-018 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '486107af63f09bfcd37d0ac9dbe0aaf5';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Кучин Алексей Андреевич</a>
+<div id="486107af63f09bfcd37d0ac9dbe0aaf5" style="display: none;">
+<div>
+вход 2011-09-29 09:08:06 OKP-297 </div>
+<div>
+выход 2011-09-28 18:09:29 OKP-297 </div>
+<div>
+вход 2011-09-28 09:08:29 OKP-297 </div>
+<div>
+выход 2011-09-27 18:10:11 OKP-297 </div>
+<div>
+вход 2011-09-27 09:15:54 OKP-297 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '68d622d28e621f40936482db57ee1d61';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Кушнарева Ирина Геннадьевна</a>
+<div id="68d622d28e621f40936482db57ee1d61" style="display: none;">
+<div>
+вход 2011-09-29 07:50:00 RASCHGROUP-162 </div>
+<div>
+выход 2011-09-28 17:01:05 RASCHGROUP-162 </div>
+<div>
+вход 2011-09-28 08:18:12 RASCHGROUP-162 </div>
+<div>
+выход 2011-09-27 17:01:20 RASCHGROUP-162 </div>
+<div>
+вход 2011-09-27 08:50:42 RASCHGROUP-162 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '48802d93c8627ab358c4dd89f24409f3';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Малахов Александр Александрович</a>
+<div id="48802d93c8627ab358c4dd89f24409f3" style="display: none;">
+<div>
+выход 2011-09-24 14:13:16 TO-204 </div>
+<div>
+выход 2011-09-23 18:04:55 TO-008 </div>
+<div>
+вход 2011-09-23 08:42:22 TO-008 </div>
+<div>
+вход 2011-09-19 10:58:18 TO-008 </div>
+<div>
+выход 2011-09-18 19:04:38 TO-008 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '6d7a00054ae9551b014e7357c42a7800';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Маслакова Анастасия Юрьевна</a>
+<div id="6d7a00054ae9551b014e7357c42a7800" style="display: none;">
+<div>
+вход 2011-09-29 07:39:17 CALLCENTER-269 </div>
+<div>
+выход 2011-09-26 20:01:31 CALLCENTER-269 </div>
+<div>
+вход 2011-09-26 13:01:07 CALLCENTER-269 </div>
+<div>
+вход 2011-09-26 10:51:37 CALLCENTER-269 </div>
+<div>
+выход 2011-09-25 20:59:49 CALLCENTER-269 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '6faca8b8db5bfe7c6942cdb75d87e1bb';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Мезенина Светлана Анатольевна</a>
+<div id="6faca8b8db5bfe7c6942cdb75d87e1bb" style="display: none;">
+<div>
+вход 2011-09-29 08:04:29 MEZENINA </div>
+<div>
+выход 2011-09-28 17:14:38 MEZENINA </div>
+<div>
+вход 2011-09-28 08:01:54 MEZENINA </div>
+<div>
+выход 2011-09-27 17:01:01 MEZENINA </div>
+<div>
+вход 2011-09-27 08:04:37 MEZENINA </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '27eadc1b2c2c91095a117b37aac41b14';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Мелёхина Надежда Вячеславовна</a>
+<div id="27eadc1b2c2c91095a117b37aac41b14" style="display: none;">
+<div>
+вход 2011-09-29 09:44:25 CALLCENTER-254 </div>
+<div>
+выход 2011-09-28 18:06:57 CALLCENTER-254 </div>
+<div>
+вход 2011-09-28 08:57:07 CALLCENTER-254 </div>
+<div>
+выход 2011-09-27 17:00:55 CALLCENTER-254 </div>
+<div>
+вход 2011-09-27 07:55:32 CALLCENTER-254 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '10799f25af307c3556a98de6cb0ab2be';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Мельникова Светлана Станиславовна</a>
+<div id="10799f25af307c3556a98de6cb0ab2be" style="display: none;">
+<div>
+вход 2011-09-29 08:44:53 RASCHGROUP-259 </div>
+<div>
+выход 2011-09-28 17:54:02 RASCHGROUP-259 </div>
+<div>
+вход 2011-09-28 08:43:12 RASCHGROUP-259 </div>
+<div>
+выход 2011-09-27 18:53:11 RASCHGROUP-259 </div>
+<div>
+вход 2011-09-27 08:47:28 RASCHGROUP-259 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '835e2f5e04dcc977c3507ecdb133107c';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Миронова Ольга Александровна</a>
+<div id="835e2f5e04dcc977c3507ecdb133107c" style="display: none;">
+<div>
+выход 2011-09-15 16:57:38 RASCHGROUP-362 </div>
+<div>
+вход 2011-09-15 08:02:22 RASCHGROUP-362 </div>
+<div>
+выход 2011-09-14 17:04:40 RASCHGROUP-362 </div>
+<div>
+вход 2011-09-14 10:47:32 RASCHGROUP-362 </div>
+<div>
+выход 2011-09-14 10:45:42 RASCHGROUP-362 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '82e7ad9b923e8068e7cf76d7d864d483';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Михайлюк Юлия Александровна</a>
+<div id="82e7ad9b923e8068e7cf76d7d864d483" style="display: none;">
+<div>
+вход 2011-09-29 08:42:27 KADRI-304 </div>
+<div>
+выход 2011-09-28 17:52:56 KADRI-304 </div>
+<div>
+вход 2011-09-28 08:50:30 KADRI-304 </div>
+<div>
+выход 2011-09-27 17:48:19 KADRI-304 </div>
+<div>
+вход 2011-09-27 08:42:56 KADRI-304 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '18c167718e8ca3f09ce4142bf765e644';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Моисеенко Дина Павловна</a>
+<div id="18c167718e8ca3f09ce4142bf765e644" style="display: none;">
+<div>
+выход 2011-09-29 10:56:40 ABONLD-224 </div>
+<div>
+вход 2011-09-29 10:24:01 ABONLD-224 </div>
+<div>
+выход 2011-09-28 19:55:30 ABONLD-224 </div>
+<div>
+вход 2011-09-26 09:55:52 ABONLD-224 </div>
+<div>
+выход 2011-09-23 18:59:33 ABONLD-224 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '29290c510f014bfd6ec4e89356f50bf9';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Пасечник Антон Игревич</a>
+<div id="29290c510f014bfd6ec4e89356f50bf9" style="display: none;">
+<div>
+вход 2011-09-29 09:17:59 MOSIENKOAU </div>
+<div>
+выход 2011-09-28 12:01:33 MOSIENKOAU </div>
+<div>
+вход 2011-09-28 09:54:35 MOSIENKOAU </div>
+<div>
+выход 2011-09-26 18:00:26 MOSIENKOAU </div>
+<div>
+вход 2011-09-26 09:29:04 MOSIENKOAU </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'd9badc441afeff4014918889ba02feac';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Петенев Максим Валерьевич</a>
+<div id="d9badc441afeff4014918889ba02feac" style="display: none;">
+<div>
+вход 2011-09-21 14:54:46 PETEMEVMV </div>
+<div>
+выход 2011-09-21 14:51:27 PETEMEVMV </div>
+<div>
+вход 2011-09-09 16:43:27 PETEMEVMV </div>
+<div>
+выход 2011-08-26 18:41:40 PETEMEVMV </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '067a50d16355f35df3f50a7de2f51765';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Попова Мария Михайловна</a>
+<div id="067a50d16355f35df3f50a7de2f51765" style="display: none;">
+<div>
+выход 2011-09-29 13:51:42 TO-MASHA </div>
+<div>
+выход 2011-09-29 13:44:26 TO-MASHA </div>
+<div>
+вход 2011-09-25 09:37:53 TO-MASHA </div>
+<div>
+выход 2011-09-25 09:35:35 TO-MASHA </div>
+<div>
+вход 2011-09-19 08:27:33 TO-MASHA </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'da80055fad92345b56ff4a7d049c1412';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Прохорова Екатерина Сергеевна</a>
+<div id="da80055fad92345b56ff4a7d049c1412" style="display: none;">
+<div>
+выход 2011-09-09 14:34:20 CALLCENTER-017 </div>
+<div>
+вход 2011-09-09 11:06:00 CALLCENTER-017 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'a3e3b2d558a7e1b926befbba770ef8a2';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Пьянков Дмитрий Игоревич</a>
+<div id="a3e3b2d558a7e1b926befbba770ef8a2" style="display: none;">
+<div>
+вход 2011-09-26 15:37:04 TO-204 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'e0bc48dd4f1d46db5059d8b110c0ac3c';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Рахимулина Светлана Сергеевна</a>
+<div id="e0bc48dd4f1d46db5059d8b110c0ac3c" style="display: none;">
+<div>
+вход 2011-09-29 08:48:26 BUH-377 </div>
+<div>
+выход 2011-09-28 17:59:40 BUH-377 </div>
+<div>
+вход 2011-09-28 08:48:19 BUH-377 </div>
+<div>
+выход 2011-09-27 18:00:26 BUH-377 </div>
+<div>
+вход 2011-09-27 09:15:23 BUH-377 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '7355c3177abdcf1915a934f21ca53e8a';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Рачинская Е.Н.</a>
+<div id="7355c3177abdcf1915a934f21ca53e8a" style="display: none;">
+<div>
+выход 2011-09-15 13:59:23 ABONKL-177 </div>
+<div>
+вход 2011-09-15 08:51:26 ABONKL-177 </div>
+<div>
+выход 2011-09-14 19:59:57 ABONKL-177 </div>
+<div>
+вход 2011-09-14 10:54:58 ABONKL-177 </div>
+<div>
+выход 2011-09-13 19:58:39 ABONKL-177 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'c88395de8fa0dbf845ee91d445ae076f';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Сайкина Елена Валерьевна</a>
+<div id="c88395de8fa0dbf845ee91d445ae076f" style="display: none;">
+<div>
+вход 2011-09-28 08:24:58 ABONVRN-166 </div>
+<div>
+выход 2011-09-27 09:04:33 ABONVRN-166 </div>
+<div>
+вход 2011-09-24 12:39:22 ABONVRN-166 </div>
+<div>
+вход 2011-09-06 15:37:19 ABONVRN-166 </div>
+<div>
+выход 2011-09-06 15:33:33 ABONVRN-166 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '00fc86ee8d88779838118ecfbbd69c70';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Светлана А.. Клубенко</a>
+<div id="00fc86ee8d88779838118ecfbbd69c70" style="display: none;">
+<div>
+вход 2011-09-23 08:23:17 RASCHGROUP-332 </div>
+<div>
+выход 2011-09-22 17:01:01 RASCHGROUP-332 </div>
+<div>
+вход 2011-09-22 08:10:28 RASCHGROUP-332 </div>
+<div>
+выход 2011-09-21 17:00:17 RASCHGROUP-332 </div>
+<div>
+вход 2011-09-19 08:56:58 RASCHGROUP-332 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '7bdc0240e14062bb2f8082892d6ec619';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Светлана Анатольевна Мезенина</a>
+<div id="7bdc0240e14062bb2f8082892d6ec619" style="display: none;">
+<div>
+выход 2011-09-12 19:55:55 MEZENINA </div>
+<div>
+выход 2011-09-12 19:52:43 MEZENINA </div>
+<div>
+вход 2011-09-12 19:52:01 MEZENINA </div>
+<div>
+выход 2011-09-12 19:51:21 MEZENINA </div>
+<div>
+вход 2011-09-12 08:13:34 MEZENINA </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '05bb3d2d6d13a16c0b1013fe5f0a3ad8';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Светлана Мельникова</a>
+<div id="05bb3d2d6d13a16c0b1013fe5f0a3ad8" style="display: none;">
+<div>
+выход 2011-09-22 17:04:42 RASCHGROUP-259 </div>
+<div>
+вход 2011-09-22 08:41:07 RASCHGROUP-259 </div>
+<div>
+выход 2011-09-21 17:14:54 RASCHGROUP-259 </div>
+<div>
+вход 2011-09-19 08:45:20 RASCHGROUP-259 </div>
+<div>
+выход 2011-09-16 16:59:11 RASCHGROUP-259 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '3ea59ab6e29d6d185124ad3370293507';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Синицын А. А.</a>
+<div id="3ea59ab6e29d6d185124ad3370293507" style="display: none;">
+<div>
+вход 2011-09-15 12:58:20 AHO-148 </div>
+<div>
+выход 2011-09-14 09:35:45 AHO-148 </div>
+<div>
+вход 2011-09-14 09:26:53 AHO-148 </div>
+<div>
+вход 2011-09-14 09:22:28 AHO-148 </div>
+<div>
+выход 2011-09-09 20:46:34 AHO-148 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '59d2529d401d172d7d9d62a9a8d9761c';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Синицын Андрей Анатольевич</a>
+<div id="59d2529d401d172d7d9d62a9a8d9761c" style="display: none;">
+<div>
+выход 2011-09-28 17:14:14 AHO-148 </div>
+<div>
+вход 2011-09-28 09:09:56 AHO-148 </div>
+<div>
+выход 2011-09-27 16:58:03 AHO-148 </div>
+<div>
+вход 2011-09-27 08:56:22 AHO-148 </div>
+<div>
+выход 2011-09-26 17:07:46 AHO-148 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '2710834db8c615182501106ad9d079b3';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Смелянский Антон Сергеевич v2.07</a>
+<div id="2710834db8c615182501106ad9d079b3" style="display: none;">
+<div>
+вход 2011-09-05 12:07:32 ABONVRN-170 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'ec3cab5357d66f8ac4aa92c921a19d34';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Сосновская Мария Владимировна</a>
+<div id="ec3cab5357d66f8ac4aa92c921a19d34" style="display: none;">
+<div>
+вход 2011-09-26 13:34:08 MARKETING2 </div>
+<div>
+вход 2011-09-15 10:17:00 MARKETING2 </div>
+<div>
+выход 2011-09-15 10:10:08 MARKETING2 </div>
+<div>
+вход 2011-09-09 12:37:31 MARKETING2 </div>
+<div>
+выход 2011-09-09 12:33:46 MARKETING2 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '31f81b985818000159acf9f84ac7d8ff';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Телегина Дарья Константиновна</a>
+<div id="31f81b985818000159acf9f84ac7d8ff" style="display: none;">
+<div>
+вход 2011-09-29 13:56:58 CALLCENTER-211 </div>
+<div>
+выход 2011-09-27 20:59:19 CALLCENTER-211 </div>
+<div>
+вход 2011-09-27 12:04:28 CALLCENTER-211 </div>
+<div>
+выход 2011-09-26 21:01:31 CALLCENTER-211 </div>
+<div>
+вход 2011-09-26 12:00:43 CALLCENTER-211 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '656556b129e4d458a94f66856a7b9dd4';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Ткачев Павел Александрович</a>
+<div id="656556b129e4d458a94f66856a7b9dd4" style="display: none;">
+<div>
+вход 2011-09-28 12:06:40 PRODAJ-129 </div>
+<div>
+вход 2011-09-16 10:56:34 PRODAJ-129 </div>
+<div>
+выход 2011-09-14 19:06:44 PRODAJ-129 </div>
+<div>
+вход 2011-09-14 12:57:17 PRODAJ-129 </div>
+<div>
+выход 2011-09-14 12:54:33 PRODAJ-129 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '502e55a59653bcd4acceaba1b1720ca8';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Толстикова Лилия Анатольевна</a>
+<div id="502e55a59653bcd4acceaba1b1720ca8" style="display: none;">
+<div>
+вход 2011-09-29 14:45:53 RASCHGROUP-337 </div>
+<div>
+выход 2011-09-29 12:12:37 RASCHGROUP-337 </div>
+<div>
+вход 2011-09-29 08:00:10 RASCHGROUP-337 </div>
+<div>
+выход 2011-09-28 17:00:41 RASCHGROUP-337 </div>
+<div>
+вход 2011-09-28 07:46:47 RASCHGROUP-337 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'dbb6f8408e84c42b5bad1a478ea41058';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Чайка Наталья Игоревна</a>
+<div id="dbb6f8408e84c42b5bad1a478ea41058" style="display: none;">
+<div>
+вход 2011-09-29 10:55:51 ABONVRN-170 </div>
+<div>
+выход 2011-09-28 19:57:36 KASSA </div>
+<div>
+вход 2011-09-28 15:39:41 KASSA </div>
+<div>
+вход 2011-09-28 11:57:34 KASSA </div>
+<div>
+выход 2011-09-27 19:59:50 ABONVRN-170 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '94c000ed1e6d17858961608fc0cb2466';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Чайкина Наталья Игоревна</a>
+<div id="94c000ed1e6d17858961608fc0cb2466" style="display: none;">
+<div>
+вход 2011-08-22 15:06:37 ABONSLN-341 </div>
+<div>
+выход 2011-08-22 15:03:50 ABONSLN-341 </div>
+<div>
+выход 2011-08-22 10:57:03 KASSA </div>
+<div>
+вход 2011-08-22 09:26:38 KASSA </div>
+<div>
+вход 2011-08-22 09:12:43 ABONSLN-341 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '874277bf984f38ea802b7394b09a9304';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Шабанов Михаил Николаевич</a>
+<div id="874277bf984f38ea802b7394b09a9304" style="display: none;">
+<div>
+выход 2011-09-29 14:24:49 AHOKL-132 </div>
+<div>
+вход 2011-09-29 13:09:49 AHOKL-132 </div>
+<div>
+выход 2011-09-28 14:48:16 AHOKL-132 </div>
+<div>
+вход 2011-09-28 14:00:19 AHOKL-132 </div>
+<div>
+выход 2011-09-28 10:22:44 AHOKL-132 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'ad81270b55d11616c2ac8fdd99d032ac';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Шатунова Марина В</a>
+<div id="ad81270b55d11616c2ac8fdd99d032ac" style="display: none;">
+<div>
+вход 2011-09-09 19:57:02 AHO-237 </div>
+<div>
+выход 2011-09-09 19:54:09 AHO-237 </div>
+<div>
+вход 2011-09-08 11:46:17 AHO-237 </div>
+<div>
+выход 2011-09-08 11:41:02 AHO-237 </div>
+<div>
+вход 2011-09-02 11:19:49 AHO-237 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'd752484383a0c2ad5ab8b80aca7e785f';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Шатунова Марина Владимировна</a>
+<div id="d752484383a0c2ad5ab8b80aca7e785f" style="display: none;">
+<div>
+вход 2011-09-26 16:14:43 AHO-237 </div>
+<div>
+вход 2011-09-26 13:33:16 AHO-237 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'c37cb567ca11b96dbfb694ff786decb2';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Шибанов А.Н.</a>
+<div id="c37cb567ca11b96dbfb694ff786decb2" style="display: none;">
+<div>
+выход 2011-09-19 10:48:43 ABONSLN-341 </div>
+<div>
+вход 2011-09-19 10:32:59 ABONSLN-341 </div>
+<div>
+выход 2011-09-13 12:25:47 PRODAJ-213 </div>
+<div>
+вход 2011-09-13 12:10:34 PRODAJ-213 </div>
+<div>
+выход 2011-09-08 11:22:49 TO-008 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'd59b0689b7df0f541150330e9f6a012a';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Шибанов Андрей Николаевич</a>
+<div id="d59b0689b7df0f541150330e9f6a012a" style="display: none;">
+<div>
+выход 2011-09-28 16:52:08 TO-008 </div>
+<div>
+вход 2011-09-28 16:20:27 TO-008 </div>
+<div>
+выход 2011-09-22 22:51:45 TO-008 </div>
+<div>
+вход 2011-09-22 21:07:20 TO-008 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'd7d26e1dbb58c8dd74d110602f7f3921';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Шишканова Ольга Александровна</a>
+<div id="d7d26e1dbb58c8dd74d110602f7f3921" style="display: none;">
+<div>
+выход 2011-09-28 19:54:46 ABONLD-228 </div>
+<div>
+вход 2011-09-26 09:52:27 ABONLD-228 </div>
+<div>
+вход 2011-09-23 11:01:22 ABONLD-228 </div>
+<div>
+вход 2011-09-22 13:49:18 ABONLD-228 </div>
+<div>
+вход 2011-09-22 13:46:22 ABONLD-228 </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'abd3a368ac6cb99b6e205dbb88a8af91';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">Шункова Валентина Викторовна</a>
+<div id="abd3a368ac6cb99b6e205dbb88a8af91" style="display: none;">
+<div>
+вход 2011-09-29 09:07:27 AHO-317 </div>
+<div>
+выход 2011-09-28 22:47:28 AHO-317 </div>
+<div>
+вход 2011-09-28 09:20:35 AHO-317 </div>
+<div>
+выход 2011-09-27 17:49:51 AHO-317 </div>
+<div>
+вход 2011-09-27 09:06:20 AHO-317 </div>
+</div>
+</div>
+</td>
+
+<td valign="top">
+<div>
+                 <a href="#" onclick="
+                                 var id = 'f4431490061df6069d334303fcc99471';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">ABONKL-060</a>
+<div id="f4431490061df6069d334303fcc99471" style="display: none;">
+<div>
+выход 2011-09-21 20:03:16 Елизарова Татьяна Тимофеевна </div>
+<div>
+вход 2011-09-19 14:20:31 Елизарова Татьяна Тимофеевна </div>
+<div>
+вход 2011-09-19 10:59:46 Елизарова Татьяна Тимофеевна </div>
+<div>
+вход 2011-09-19 10:49:22 Елизарова Татьяна Тимофеевна </div>
+<div>
+выход 2011-09-16 16:56:05 Елизарова Татьяна Тимофеевна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '761a90e89e8d69fa1f4b87c395c5520c';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">ABONKL-177</a>
+<div id="761a90e89e8d69fa1f4b87c395c5520c" style="display: none;">
+<div>
+вход 2011-09-29 11:01:40 Зуева Наталья Александровна </div>
+<div>
+выход 2011-09-28 20:11:50 Зуева Наталья Александровна </div>
+<div>
+вход 2011-09-28 11:02:54 Зуева Наталья Александровна </div>
+<div>
+выход 2011-09-27 20:02:10 Зуева Наталья Александровна </div>
+<div>
+вход 2011-09-27 11:03:16 Зуева Наталья Александровна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '9d00495b205e92c07e26f2bbd48cd9ac';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">ABONKL-220</a>
+<div id="9d00495b205e92c07e26f2bbd48cd9ac" style="display: none;">
+<div>
+вход 2011-09-29 09:00:10 Какаулина Надежда Владимировна </div>
+<div>
+выход 2011-09-28 17:58:43 Какаулина Надежда Владимировна </div>
+<div>
+вход 2011-09-28 10:28:29 Какаулина Надежда Владимировна </div>
+<div>
+выход 2011-09-28 10:23:05 Какаулина Надежда Владимировна </div>
+<div>
+вход 2011-09-28 09:01:43 Какаулина Надежда Владимировна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'd72a5ad45804d72d740c9ed168df8846';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">ABONKL-230</a>
+<div id="d72a5ad45804d72d740c9ed168df8846" style="display: none;">
+<div>
+вход 2011-09-29 08:00:53 Елизарова Татьяна Тимофеевна </div>
+<div>
+выход 2011-09-28 16:55:38 Елизарова Татьяна Тимофеевна </div>
+<div>
+вход 2011-09-28 09:10:52 Елизарова Татьяна Тимофеевна </div>
+<div>
+выход 2011-09-28 09:08:48 Елизарова Татьяна Тимофеевна </div>
+<div>
+вход 2011-09-28 09:08:28 Елизарова Татьяна Тимофеевна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'c1124323eb8f0c2281b94cd5bf4babaf';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">ABONLD-066</a>
+<div id="c1124323eb8f0c2281b94cd5bf4babaf" style="display: none;">
+<div>
+выход 2011-09-23 17:34:08 Моисеенко Дина Павловна </div>
+<div>
+вход 2011-09-23 17:29:48 Моисеенко Дина Павловна </div>
+<div>
+выход 2011-08-27 17:12:40 Клубенко Н А </div>
+<div>
+вход 2011-08-27 08:36:31 Клубенко Н А </div>
+<div>
+выход 2011-08-24 19:54:43 Клубенко Н А </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '1b4152bf8051abec45ca443e47b76052';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">ABONLD-224</a>
+<div id="1b4152bf8051abec45ca443e47b76052" style="display: none;">
+<div>
+выход 2011-09-29 10:56:40 Моисеенко Дина Павловна </div>
+<div>
+вход 2011-09-29 10:24:01 Моисеенко Дина Павловна </div>
+<div>
+выход 2011-09-28 19:55:30 Моисеенко Дина Павловна </div>
+<div>
+вход 2011-09-26 09:55:52 Моисеенко Дина Павловна </div>
+<div>
+выход 2011-09-23 18:59:33 Моисеенко Дина Павловна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '1e4fad571f1db7c5e6033f58a1d8297b';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">ABONLD-228</a>
+<div id="1e4fad571f1db7c5e6033f58a1d8297b" style="display: none;">
+<div>
+выход 2011-09-28 19:54:46 Шишканова Ольга Александровна </div>
+<div>
+вход 2011-09-26 09:52:27 Шишканова Ольга Александровна </div>
+<div>
+выход 2011-09-24 17:12:58 Зуева Наталья Александровна </div>
+<div>
+вход 2011-09-24 08:55:53 Зуева Наталья Александровна </div>
+<div>
+вход 2011-09-23 11:01:22 Шишканова Ольга Александровна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '25b69bd809261c37a44d9532ae77452c';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">ABONLD-230</a>
+<div id="25b69bd809261c37a44d9532ae77452c" style="display: none;">
+<div>
+вход 2011-09-22 10:54:17 Бегинин Владимир </div>
+<div>
+выход 2011-09-22 10:31:12 Зуева Наталья Александровна </div>
+<div>
+выход 2011-09-16 18:08:14 Зуева Наталья Александровна </div>
+<div>
+вход 2011-09-16 18:07:08 Зуева Наталья Александровна </div>
+<div>
+выход 2011-09-16 18:04:17 Зуева Наталья Александровна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'cf2d3eddc4d82c216c303f438b394278';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">ABONSLN-341</a>
+<div id="cf2d3eddc4d82c216c303f438b394278" style="display: none;">
+<div>
+вход 2011-09-29 09:40:04 Беллер Мария Владимировна </div>
+<div>
+выход 2011-09-28 17:26:25 Беллер Мария Владимировна </div>
+<div>
+вход 2011-09-28 15:40:21 Беллер Мария Владимировна </div>
+<div>
+выход 2011-09-28 15:36:29 Беллер Мария Владимировна </div>
+<div>
+вход 2011-09-28 09:41:44 Беллер Мария Владимировна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '672521fcff3d2caa2f8d47392f85d74a';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">ABONVRN-142</a>
+<div id="672521fcff3d2caa2f8d47392f85d74a" style="display: none;">
+<div>
+выход 2011-08-18 12:55:02 Бегинин Владимир </div>
+<div>
+вход 2011-08-18 12:34:52 Бегинин Владимир </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '59cb16d5a3ed9878449340f4765fa9eb';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">ABONVRN-166</a>
+<div id="59cb16d5a3ed9878449340f4765fa9eb" style="display: none;">
+<div>
+вход 2011-09-28 08:24:58 Сайкина Елена Валерьевна </div>
+<div>
+выход 2011-09-27 17:24:26 Клубенко Наталья Александровна </div>
+<div>
+вход 2011-09-27 09:10:23 Клубенко Наталья Александровна </div>
+<div>
+выход 2011-09-27 09:04:33 Сайкина Елена Валерьевна </div>
+<div>
+вход 2011-09-24 12:39:22 Сайкина Елена Валерьевна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '58a7245ed6c4268caebc31932d87d7f4';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">ABONVRN-170</a>
+<div id="58a7245ed6c4268caebc31932d87d7f4" style="display: none;">
+<div>
+вход 2011-09-29 10:55:51 Чайка Наталья Игоревна </div>
+<div>
+выход 2011-09-28 18:14:11 Клубенко Наталья Александровна </div>
+<div>
+вход 2011-09-28 18:11:28 Клубенко Наталья Александровна </div>
+<div>
+выход 2011-09-27 19:59:50 Чайка Наталья Игоревна </div>
+<div>
+вход 2011-09-27 11:05:50 Чайка Наталья Игоревна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '452f48eab61966e375c6dbe9e8c9e10d';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">ABONVRN-187</a>
+<div id="452f48eab61966e375c6dbe9e8c9e10d" style="display: none;">
+<div>
+вход 2011-09-29 10:38:20 Вдовенко Валентина Анатольевна </div>
+<div>
+выход 2011-09-28 20:10:07 Вдовенко Валентина Анатольевна </div>
+<div>
+вход 2011-09-23 08:25:40 Вдовенко Валентина Анатольевна </div>
+<div>
+выход 2011-09-21 17:42:33 Вдовенко Валентина Анатольевна </div>
+<div>
+вход 2011-09-19 10:55:49 Вдовенко Валентина Анатольевна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '9eeb52badb613229884838847294b90d';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">ADD</a>
+<div id="9eeb52badb613229884838847294b90d" style="display: none;">
+<div>
+вход 2011-09-05 16:25:47 pyankov adm </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'be5fbe82909bcb4726a73fac5ba22f8a';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">AHO-025</a>
+<div id="be5fbe82909bcb4726a73fac5ba22f8a" style="display: none;">
+<div>
+выход 2011-09-28 18:00:27 Анашкин Сергей Владимирович </div>
+<div>
+вход 2011-09-28 15:21:55 Анашкин Сергей Владимирович </div>
+<div>
+выход 2011-09-28 15:18:29 Анашкин Сергей Владимирович </div>
+<div>
+вход 2011-09-28 10:46:14 Анашкин Сергей Владимирович </div>
+<div>
+выход 2011-09-28 10:42:58 Анашкин Сергей Владимирович </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'e0623bc0669548a5029038c76db2985b';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">AHO-148</a>
+<div id="e0623bc0669548a5029038c76db2985b" style="display: none;">
+<div>
+выход 2011-09-28 17:14:14 Синицын Андрей Анатольевич </div>
+<div>
+вход 2011-09-28 09:09:56 Синицын Андрей Анатольевич </div>
+<div>
+выход 2011-09-27 16:58:03 Синицын Андрей Анатольевич </div>
+<div>
+вход 2011-09-27 08:56:22 Синицын Андрей Анатольевич </div>
+<div>
+выход 2011-09-26 17:07:46 Синицын Андрей Анатольевич </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'b7ef392f3b9d31b542daf05d7303bf6f';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">AHO-237</a>
+<div id="b7ef392f3b9d31b542daf05d7303bf6f" style="display: none;">
+<div>
+вход 2011-09-26 16:14:43 Шатунова Марина Владимировна </div>
+<div>
+вход 2011-09-26 13:33:16 Шатунова Марина Владимировна </div>
+<div>
+вход 2011-09-09 19:57:02 Шатунова Марина В </div>
+<div>
+выход 2011-09-09 19:54:09 Шатунова Марина В </div>
+<div>
+вход 2011-09-08 11:46:17 Шатунова Марина В </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '3c30be7a3af246ce7953f84d1f8493d2';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">AHO-317</a>
+<div id="3c30be7a3af246ce7953f84d1f8493d2" style="display: none;">
+<div>
+вход 2011-09-29 09:07:27 Шункова Валентина Викторовна </div>
+<div>
+выход 2011-09-28 22:47:28 Шункова Валентина Викторовна </div>
+<div>
+вход 2011-09-28 09:20:35 Шункова Валентина Викторовна </div>
+<div>
+выход 2011-09-27 17:49:51 Шункова Валентина Викторовна </div>
+<div>
+вход 2011-09-27 09:06:20 Шункова Валентина Викторовна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'a5bb87da0aa0311b77ccb2565daf6281';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">AHOKL-132</a>
+<div id="a5bb87da0aa0311b77ccb2565daf6281" style="display: none;">
+<div>
+выход 2011-09-29 14:24:49 Шабанов Михаил Николаевич </div>
+<div>
+вход 2011-09-29 13:09:49 Шабанов Михаил Николаевич </div>
+<div>
+выход 2011-09-28 14:48:16 Шабанов Михаил Николаевич </div>
+<div>
+вход 2011-09-28 14:00:19 Шабанов Михаил Николаевич </div>
+<div>
+выход 2011-09-28 10:22:44 Шабанов Михаил Николаевич </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'd76d10d502edc0e7746e587c16cbe415';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">BABAHINATI-115</a>
+<div id="d76d10d502edc0e7746e587c16cbe415" style="display: none;">
+<div>
+вход 2011-09-28 10:22:56 Клубенко Наталья Александровна </div>
+<div>
+выход 2011-09-27 17:29:02 Клубенко Наталья Александровна </div>
+<div>
+вход 2011-09-27 17:06:46 Клубенко Наталья Александровна </div>
+<div>
+выход 2011-09-27 17:02:37 Клубенко Наталья Александровна </div>
+<div>
+вход 2011-09-27 16:55:52 Клубенко Наталья Александровна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'a23c8a345e51ca1dbde2e468d0dbaa95';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">BUH-045</a>
+<div id="a23c8a345e51ca1dbde2e468d0dbaa95" style="display: none;">
+<div>
+вход 2011-09-29 08:30:53 Гаврилова Ирина Евгеньевна </div>
+<div>
+выход 2011-09-28 18:02:30 Гаврилова Ирина Евгеньевна </div>
+<div>
+вход 2011-09-28 08:34:55 Гаврилова Ирина Евгеньевна </div>
+<div>
+выход 2011-09-27 17:23:23 Гаврилова Ирина Евгеньевна </div>
+<div>
+вход 2011-09-27 08:41:02 Гаврилова Ирина Евгеньевна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'd3f39ebcfc66eae56973c0ae2ed51ff8';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">BUH-111</a>
+<div id="d3f39ebcfc66eae56973c0ae2ed51ff8" style="display: none;">
+<div>
+вход 2011-09-29 14:47:13 Агаян Елена Борисовна </div>
+<div>
+выход 2011-09-29 14:45:36 Агаян Елена Борисовна </div>
+<div>
+вход 2011-09-29 10:24:29 Агаян Елена Борисовна </div>
+<div>
+выход 2011-09-28 17:49:00 Агаян Елена Борисовна </div>
+<div>
+вход 2011-09-28 16:58:27 Агаян Елена Борисовна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '12b169e398bf7d50662fd732e294940c';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">BUH-367</a>
+<div id="12b169e398bf7d50662fd732e294940c" style="display: none;">
+<div>
+вход 2011-09-29 08:38:55 Китова Мария Александровна </div>
+<div>
+выход 2011-09-28 17:59:21 Китова Мария Александровна </div>
+<div>
+вход 2011-09-28 08:42:22 Китова Мария Александровна </div>
+<div>
+выход 2011-09-27 17:23:44 Китова Мария Александровна </div>
+<div>
+вход 2011-09-27 08:49:32 Китова Мария Александровна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'd7aede344efc370503553fca2402843d';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">BUH-377</a>
+<div id="d7aede344efc370503553fca2402843d" style="display: none;">
+<div>
+вход 2011-09-29 08:48:26 Рахимулина Светлана Сергеевна </div>
+<div>
+выход 2011-09-28 17:59:40 Рахимулина Светлана Сергеевна </div>
+<div>
+вход 2011-09-28 08:48:19 Рахимулина Светлана Сергеевна </div>
+<div>
+выход 2011-09-27 18:00:26 Рахимулина Светлана Сергеевна </div>
+<div>
+вход 2011-09-27 09:15:23 Рахимулина Светлана Сергеевна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'cfe5ce0f898ca4a3058474f871af0636';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">CALLCENTER-012</a>
+<div id="cfe5ce0f898ca4a3058474f871af0636" style="display: none;">
+<div>
+вход 2011-09-29 10:37:47 Демьяненко Наталья Владимировна </div>
+<div>
+выход 2011-09-28 17:00:47 Демьяненко Наталья Владимировна </div>
+<div>
+вход 2011-09-28 07:56:09 Демьяненко Наталья Владимировна </div>
+<div>
+выход 2011-09-27 21:00:09 Демьяненко Наталья Владимировна </div>
+<div>
+вход 2011-09-27 11:53:58 Демьяненко Наталья Владимировна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'cfc348d443df0d08cec900a0494d1a85';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">CALLCENTER-015</a>
+<div id="cfc348d443df0d08cec900a0494d1a85" style="display: none;">
+<div>
+вход 2011-09-29 12:02:42 Заяц Мария Валерьевна </div>
+<div>
+выход 2011-09-28 22:32:39 Заяц Мария Валерьевна </div>
+<div>
+вход 2011-09-28 12:03:39 Заяц Мария Валерьевна </div>
+<div>
+выход 2011-09-27 23:01:14 Заяц Мария Валерьевна </div>
+<div>
+вход 2011-09-27 13:46:05 Заяц Мария Валерьевна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '16974c3b90bb9ef4590b68fb0017935f';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">CALLCENTER-017</a>
+<div id="16974c3b90bb9ef4590b68fb0017935f" style="display: none;">
+<div>
+вход 2011-09-29 09:59:47 Конончук Екатерина Николаевна </div>
+<div>
+выход 2011-09-28 17:14:04 Конончук Екатерина Николаевна </div>
+<div>
+вход 2011-09-28 07:53:04 Конончук Екатерина Николаевна </div>
+<div>
+выход 2011-09-25 22:59:46 Конончук Екатерина Николаевна </div>
+<div>
+вход 2011-09-25 14:58:58 Конончук Екатерина Николаевна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '244b4bef0669cd376d9e83043dfa55ea';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">CALLCENTER-018</a>
+<div id="244b4bef0669cd376d9e83043dfa55ea" style="display: none;">
+<div>
+выход 2011-09-28 19:00:44 Коновалов Иван Валерьевич </div>
+<div>
+вход 2011-09-28 09:11:06 Коновалов Иван Валерьевич </div>
+<div>
+выход 2011-09-27 19:02:00 Коновалов Иван Валерьевич </div>
+<div>
+вход 2011-09-27 10:08:45 Коновалов Иван Валерьевич </div>
+<div>
+выход 2011-09-26 16:00:18 Коновалов Иван Валерьевич </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '4c91774f687a1a03854920a265fdf9c7';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">CALLCENTER-021</a>
+<div id="4c91774f687a1a03854920a265fdf9c7" style="display: none;">
+<div>
+вход 2011-09-29 08:45:07 Карчава Иван Зазович </div>
+<div>
+выход 2011-09-28 19:05:14 Карчава Иван Зазович </div>
+<div>
+вход 2011-09-28 09:19:37 Карчава Иван Зазович </div>
+<div>
+выход 2011-09-27 17:00:51 Карчава Иван Зазович </div>
+<div>
+вход 2011-09-27 07:49:59 Карчава Иван Зазович </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '60dbcb9f42444e3786c9329f775b8629';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">CALLCENTER-023</a>
+<div id="60dbcb9f42444e3786c9329f775b8629" style="display: none;">
+<div>
+вход 2011-09-26 13:10:34 Арлакова Галина Фоминична </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '2c38f57f228afced99a85c41ab96dfe3';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">CALLCENTER-104</a>
+<div id="2c38f57f228afced99a85c41ab96dfe3" style="display: none;">
+<div>
+вход 2011-09-28 11:49:21 Гордовенко Юлия Андреевна </div>
+<div>
+выход 2011-09-27 18:24:32 Гордовенко Юлия Андреевна </div>
+<div>
+вход 2011-09-27 08:58:13 Гордовенко Юлия Андреевна </div>
+<div>
+выход 2011-09-27 08:56:06 Гордовенко Юлия Андреевна </div>
+<div>
+вход 2011-09-27 08:54:33 Гордовенко Юлия Андреевна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'a52449147f80d51a7a81c1b4adb861c8';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">CALLCENTER-211</a>
+<div id="a52449147f80d51a7a81c1b4adb861c8" style="display: none;">
+<div>
+вход 2011-09-29 13:56:58 Телегина Дарья Константиновна </div>
+<div>
+выход 2011-09-27 20:59:19 Телегина Дарья Константиновна </div>
+<div>
+вход 2011-09-27 12:04:28 Телегина Дарья Константиновна </div>
+<div>
+выход 2011-09-26 21:01:31 Телегина Дарья Константиновна </div>
+<div>
+вход 2011-09-26 12:00:43 Телегина Дарья Константиновна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '145098a1602e5de11afc895192c31550';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">CALLCENTER-239</a>
+<div id="145098a1602e5de11afc895192c31550" style="display: none;">
+<div>
+вход 2011-09-26 14:07:50 Кузнецова Мария Олеговна </div>
+<div>
+вход 2011-09-26 10:46:35 Кузнецова Мария Олеговна </div>
+<div>
+выход 2011-09-23 17:00:17 Кузнецова Мария Олеговна </div>
+<div>
+выход 2011-09-16 20:59:22 Арлакова Анна Владимировна </div>
+<div>
+вход 2011-09-16 11:57:54 Арлакова Анна Владимировна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '5a357141c754b51c990d66a458c5da65';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">CALLCENTER-254</a>
+<div id="5a357141c754b51c990d66a458c5da65" style="display: none;">
+<div>
+вход 2011-09-29 09:44:25 Мелёхина Надежда Вячеславовна </div>
+<div>
+выход 2011-09-28 18:06:57 Мелёхина Надежда Вячеславовна </div>
+<div>
+вход 2011-09-28 08:57:07 Мелёхина Надежда Вячеславовна </div>
+<div>
+выход 2011-09-27 17:00:55 Мелёхина Надежда Вячеславовна </div>
+<div>
+вход 2011-09-27 07:55:32 Мелёхина Надежда Вячеславовна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '7ffbd457abc9003be76ac8f5c2203bec';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">CALLCENTER-269</a>
+<div id="7ffbd457abc9003be76ac8f5c2203bec" style="display: none;">
+<div>
+вход 2011-09-29 07:39:17 Маслакова Анастасия Юрьевна </div>
+<div>
+выход 2011-09-26 20:01:31 Маслакова Анастасия Юрьевна </div>
+<div>
+вход 2011-09-26 13:01:07 Маслакова Анастасия Юрьевна </div>
+<div>
+вход 2011-09-26 10:51:37 Маслакова Анастасия Юрьевна </div>
+<div>
+выход 2011-09-25 20:59:49 Маслакова Анастасия Юрьевна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '98d924d27159a3b29cd2a00ace2b68aa';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">CALLCENTER-296</a>
+<div id="98d924d27159a3b29cd2a00ace2b68aa" style="display: none;">
+<div>
+вход 2011-09-29 12:05:21 Коновалова Ксения Александровна </div>
+<div>
+выход 2011-09-27 15:31:43 Коновалова Ксения Александровна </div>
+<div>
+вход 2011-09-27 10:41:13 Коновалова Ксения Александровна </div>
+<div>
+выход 2011-09-26 14:04:05 Коновалова Ксения Александровна </div>
+<div>
+вход 2011-09-26 13:05:02 Коновалова Ксения Александровна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '472bdb60a74f68086b2de5962293f9e9';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">CALLCENTER-323</a>
+<div id="472bdb60a74f68086b2de5962293f9e9" style="display: none;">
+<div>
+вход 2011-09-29 12:03:59 Коваленко Елизавета Андреевна </div>
+<div>
+выход 2011-09-28 23:00:08 Коваленко Елизавета Андреевна </div>
+<div>
+вход 2011-09-28 13:52:14 Коваленко Елизавета Андреевна </div>
+<div>
+выход 2011-09-27 22:24:07 Коваленко Елизавета Андреевна </div>
+<div>
+вход 2011-09-27 10:44:28 Коваленко Елизавета Андреевна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'efb1e9136e1449f89db221260ca6062f';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">EXP-131</a>
+<div id="efb1e9136e1449f89db221260ca6062f" style="display: none;">
+<div>
+выход 2011-09-16 17:58:55 Богодухов Андрей Михайлович </div>
+<div>
+вход 2011-09-16 12:21:01 Богодухов Андрей Михайлович </div>
+<div>
+выход 2011-09-16 09:57:27 Богодухов Андрей Михайлович </div>
+<div>
+вход 2011-09-16 08:56:17 Богодухов Андрей Михайлович </div>
+<div>
+выход 2011-09-06 09:05:35 Богодухов Андрей Михайлович </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '88947d6064eafd7ba01dbad4d77aa27f';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">EXP-134</a>
+<div id="88947d6064eafd7ba01dbad4d77aa27f" style="display: none;">
+<div>
+вход 2011-09-29 09:06:41 Зборомирский Виктор Борисович </div>
+<div>
+вход 2011-09-28 09:03:54 Зборомирский Виктор Борисович </div>
+<div>
+выход 2011-09-27 18:08:35 Зборомирский Виктор Борисович </div>
+<div>
+вход 2011-09-27 09:13:06 Зборомирский Виктор Борисович </div>
+<div>
+выход 2011-09-26 16:50:16 Зборомирский Виктор Борисович </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'c04fdb2cf6cd8bcaeff2b22984179541';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">EXP-225</a>
+<div id="c04fdb2cf6cd8bcaeff2b22984179541" style="display: none;">
+<div>
+вход 2011-09-12 16:43:50 Дежурный техник КТВ </div>
+<div>
+вход 2011-09-10 09:11:59 Дежурный техник КТВ </div>
+<div>
+выход 2011-09-10 09:01:05 Дежурный техник КТВ </div>
+<div>
+вход 2011-08-29 09:03:44 Дежурный техник КТВ </div>
+<div>
+вход 2011-08-28 22:13:59 Дежурный техник КТВ </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '06ab27de828fc0dccc67e84eb4a2c596';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">EXP-347</a>
+<div id="06ab27de828fc0dccc67e84eb4a2c596" style="display: none;">
+<div>
+вход 2011-09-29 08:19:42 Кривец Владимир Николаевич </div>
+<div>
+выход 2011-09-28 17:29:01 Кривец Владимир Николаевич </div>
+<div>
+вход 2011-09-28 08:14:39 Кривец Владимир Николаевич </div>
+<div>
+выход 2011-09-27 17:45:21 Кривец Владимир Николаевич </div>
+<div>
+вход 2011-09-27 08:08:55 Кривец Владимир Николаевич </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'e6d97ad837382e50ee51d4ef94af447b';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">EXP-400</a>
+<div id="e6d97ad837382e50ee51d4ef94af447b" style="display: none;">
+<div>
+вход 2011-09-29 09:17:10 Богодухов Андрей Михайлович </div>
+<div>
+выход 2011-09-28 17:56:00 Богодухов Андрей Михайлович </div>
+<div>
+вход 2011-09-28 09:50:07 Богодухов Андрей Михайлович </div>
+<div>
+выход 2011-09-27 19:40:21 Богодухов Андрей Михайлович </div>
+<div>
+вход 2011-09-27 17:40:40 Богодухов Андрей Михайлович </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '2cdf3d00583b8f5d940bf1e867a82a7a';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">KADRI-304</a>
+<div id="2cdf3d00583b8f5d940bf1e867a82a7a" style="display: none;">
+<div>
+вход 2011-09-29 08:42:27 Михайлюк Юлия Александровна </div>
+<div>
+выход 2011-09-28 17:52:56 Михайлюк Юлия Александровна </div>
+<div>
+вход 2011-09-28 08:50:30 Михайлюк Юлия Александровна </div>
+<div>
+выход 2011-09-27 17:48:19 Михайлюк Юлия Александровна </div>
+<div>
+вход 2011-09-27 08:42:56 Михайлюк Юлия Александровна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'bffaa107d1227440b549a46629a43264';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">KASSA</a>
+<div id="bffaa107d1227440b549a46629a43264" style="display: none;">
+<div>
+вход 2011-09-29 09:41:59 Алексеева Любовь Юрьевна </div>
+<div>
+выход 2011-09-28 19:57:36 Чайка Наталья Игоревна </div>
+<div>
+вход 2011-09-28 15:39:41 Чайка Наталья Игоревна </div>
+<div>
+вход 2011-09-28 11:57:34 Чайка Наталья Игоревна </div>
+<div>
+вход 2011-09-28 09:44:05 Алексеева Любовь Юрьевна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '637fcba613dd05c378c8e8635c7c107c';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">KOVALENKO-BUH</a>
+<div id="637fcba613dd05c378c8e8635c7c107c" style="display: none;">
+<div>
+вход 2011-09-29 09:07:20 Коваленко Татьяна Николаевна </div>
+<div>
+выход 2011-09-28 18:00:23 Коваленко Татьяна Николаевна </div>
+<div>
+вход 2011-09-28 09:06:34 Коваленко Татьяна Николаевна </div>
+<div>
+выход 2011-09-27 18:11:15 Коваленко Татьяна Николаевна </div>
+<div>
+вход 2011-09-27 09:11:28 Коваленко Татьяна Николаевна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '1cec761cc915dfaadd3b99497bb7fbab';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">MARKETING-028</a>
+<div id="1cec761cc915dfaadd3b99497bb7fbab" style="display: none;">
+<div>
+вход 2011-09-28 14:49:43 Воеводина Анастасия Владимировна </div>
+<div>
+выход 2011-09-28 14:45:01 Воеводина Анастасия Владимировна </div>
+<div>
+вход 2011-09-26 13:59:26 Воеводина Анастасия Владимировна </div>
+<div>
+вход 2011-09-19 09:47:32 Воеводина Анастасия Владимировна </div>
+<div>
+выход 2011-09-16 18:01:07 Воеводина Анастасия Владимировна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'e5fe0306fca7e4fa10cf10a0759a73f9';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">MARKETING-056</a>
+<div id="e5fe0306fca7e4fa10cf10a0759a73f9" style="display: none;">
+<div>
+вход 2011-09-26 13:28:24 Васильева Наталья Николаевна </div>
+<div>
+вход 2011-09-26 08:22:14 Васильева Наталья Николаевна </div>
+<div>
+вход 2011-09-22 09:11:31 Васильева Наталья Николаевна </div>
+<div>
+вход 2011-09-19 09:15:42 Васильева Наталья Николаевна </div>
+<div>
+выход 2011-09-16 18:48:41 Васильева Наталья Николаевна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '91a39daf01c39fe310f6813371fc0287';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">MARKETING-257</a>
+<div id="91a39daf01c39fe310f6813371fc0287" style="display: none;">
+<div>
+вход 2011-09-29 08:35:30 Данилина Елена Александровна </div>
+<div>
+выход 2011-09-28 15:55:51 Данилина Елена Александровна </div>
+<div>
+вход 2011-09-28 08:47:45 Данилина Елена Александровна </div>
+<div>
+выход 2011-09-27 19:35:43 Данилина Елена Александровна </div>
+<div>
+вход 2011-09-27 09:27:14 Данилина Елена Александровна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'd254083520e72a78cd684d8aed6efb37';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">MARKETING2</a>
+<div id="d254083520e72a78cd684d8aed6efb37" style="display: none;">
+<div>
+вход 2011-09-26 13:34:08 Сосновская Мария Владимировна </div>
+<div>
+вход 2011-09-15 10:17:00 Сосновская Мария Владимировна </div>
+<div>
+выход 2011-09-15 10:10:08 Сосновская Мария Владимировна </div>
+<div>
+вход 2011-09-09 12:37:31 Сосновская Мария Владимировна </div>
+<div>
+выход 2011-09-09 12:33:46 Сосновская Мария Владимировна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'a729bd7b9ea8e7252037368dc601eaf3';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">MEZENINA</a>
+<div id="a729bd7b9ea8e7252037368dc601eaf3" style="display: none;">
+<div>
+вход 2011-09-29 08:04:29 Мезенина Светлана Анатольевна </div>
+<div>
+выход 2011-09-28 17:14:38 Мезенина Светлана Анатольевна </div>
+<div>
+вход 2011-09-28 08:01:54 Мезенина Светлана Анатольевна </div>
+<div>
+выход 2011-09-27 17:01:01 Мезенина Светлана Анатольевна </div>
+<div>
+вход 2011-09-27 08:04:37 Мезенина Светлана Анатольевна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'd46a057d1f6c2e9a541d4eecc49051ad';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">MOSIENKOAU</a>
+<div id="d46a057d1f6c2e9a541d4eecc49051ad" style="display: none;">
+<div>
+вход 2011-09-29 09:17:59 Пасечник Антон Игревич </div>
+<div>
+выход 2011-09-28 12:01:33 Пасечник Антон Игревич </div>
+<div>
+вход 2011-09-28 09:54:35 Пасечник Антон Игревич </div>
+<div>
+выход 2011-09-26 18:00:26 Пасечник Антон Игревич </div>
+<div>
+вход 2011-09-26 09:29:04 Пасечник Антон Игревич </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'a7bb54cebefebb4ae80af83bc8c17c71';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">NACH_CALL</a>
+<div id="a7bb54cebefebb4ae80af83bc8c17c71" style="display: none;">
+<div>
+вход 2011-09-12 10:55:47 Гришко Инна Владимировна </div>
+<div>
+выход 2011-09-12 10:54:36 Гришко Инна Владимировна </div>
+<div>
+вход 2011-09-12 10:53:48 Гришко Инна Владимировна </div>
+<div>
+выход 2011-09-12 10:52:50 Гришко Инна Владимировна </div>
+<div>
+вход 2011-09-12 10:47:58 Гришко Инна Владимировна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'c4940f84940965ca2a80bf2b331b8e7c';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">nor-ASHUKYAVICHUSOS</a>
+<div id="c4940f84940965ca2a80bf2b331b8e7c" style="display: none;">
+<div>
+вход 2011-09-22 15:46:17 nor-Анастасия Воробец </div>
+<div>
+выход 2011-09-22 15:28:24 nor-Анастасия Воробец </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '6242aa7c7b5e3a22c95b2f1d834f34d5';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">nor-BEREZHNEVA</a>
+<div id="6242aa7c7b5e3a22c95b2f1d834f34d5" style="display: none;">
+<div>
+выход 2011-09-29 12:04:18 nor-Елена Бережнева </div>
+<div>
+вход 2011-09-29 11:58:16 nor-Елена Бережнева </div>
+<div>
+выход 2011-09-28 11:21:22 nor-Елена Бережнева </div>
+<div>
+вход 2011-09-27 10:58:47 nor-Елена Бережнева </div>
+<div>
+выход 2011-09-26 11:21:48 nor-Елена Бережнева </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '51676254309fd070a6d6f36b6845f659';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">nor-DERYBINIV</a>
+<div id="51676254309fd070a6d6f36b6845f659" style="display: none;">
+<div>
+выход 2011-09-09 18:26:49 nor-Исаев Андрей Викторович </div>
+<div>
+вход 2011-09-09 15:22:10 nor-Исаев Андрей Викторович </div>
+<div>
+выход 2011-09-08 20:53:31 nor-Исаев Андрей Викторович </div>
+<div>
+вход 2011-09-08 16:51:11 nor-Исаев Андрей Викторович </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '6875d50a231626bbf8bb76f908bf6090';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">nor-FIN-PC1</a>
+<div id="6875d50a231626bbf8bb76f908bf6090" style="display: none;">
+<div>
+вход 2011-09-29 09:06:38 nor-Екатерина Кондратьева </div>
+<div>
+выход 2011-09-28 17:59:30 nor-Екатерина Кондратьева </div>
+<div>
+вход 2011-09-28 09:04:30 nor-Екатерина Кондратьева </div>
+<div>
+выход 2011-09-27 18:01:35 nor-Екатерина Кондратьева </div>
+<div>
+вход 2011-09-27 09:03:09 nor-Екатерина Кондратьева </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'b9a10db6f70ed05d89e58d935b0cb516';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">nor-FIN-PC2</a>
+<div id="b9a10db6f70ed05d89e58d935b0cb516" style="display: none;">
+<div>
+вход 2011-09-29 12:46:45 nor-Сергей Тепляков </div>
+<div>
+выход 2011-09-27 18:04:32 nor-Сергей Тепляков </div>
+<div>
+вход 2011-09-27 09:08:56 nor-Сергей Тепляков </div>
+<div>
+выход 2011-09-26 18:04:30 nor-Сергей Тепляков </div>
+<div>
+вход 2011-09-26 13:17:46 nor-Сергей Тепляков </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'cd82b332a5b2120d1c14bcf384dcba08';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">nor-GLAVBUH1</a>
+<div id="cd82b332a5b2120d1c14bcf384dcba08" style="display: none;">
+<div>
+вход 2011-09-28 09:19:41 nor-Людмила В. Полянская </div>
+<div>
+выход 2011-09-27 18:03:51 nor-Людмила В. Полянская </div>
+<div>
+вход 2011-09-27 09:09:44 nor-Людмила В. Полянская </div>
+<div>
+выход 2011-09-26 17:58:26 nor-Людмила В. Полянская </div>
+<div>
+выход 2011-09-26 12:38:15 nor-Людмила В. Полянская </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '03250552bca647114aa9af39ec86f50a';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">nor-GLAVBUH2</a>
+<div id="03250552bca647114aa9af39ec86f50a" style="display: none;">
+<div>
+вход 2011-09-29 08:17:20 nor-Елена Н. Лойко </div>
+<div>
+выход 2011-09-28 17:59:22 nor-Елена Н. Лойко </div>
+<div>
+вход 2011-09-28 08:13:10 nor-Елена Н. Лойко </div>
+<div>
+выход 2011-09-27 17:58:10 nor-Елена Н. Лойко </div>
+<div>
+вход 2011-09-27 08:15:56 nor-Елена Н. Лойко </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '43429615f6d5f5cdf22cf3c663c09783';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">nor-MTS2</a>
+<div id="43429615f6d5f5cdf22cf3c663c09783" style="display: none;">
+<div>
+вход 2011-09-29 09:20:20 nor-Светлана Кольман </div>
+<div>
+выход 2011-09-28 14:55:12 nor-Светлана Кольман </div>
+<div>
+вход 2011-09-28 09:18:06 nor-Светлана Кольман </div>
+<div>
+выход 2011-09-27 17:46:34 nor-Светлана Кольман </div>
+<div>
+вход 2011-09-27 09:07:06 nor-Светлана Кольман </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'fd600d684caabbd0e39e2f04473dc48f';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">nor-NECHKINAMM</a>
+<div id="fd600d684caabbd0e39e2f04473dc48f" style="display: none;">
+<div>
+вход 2011-09-29 13:09:13 nor-Нечкина Марина Михайловна </div>
+<div>
+выход 2011-09-28 17:53:48 nor-Нечкина Марина Михайловна </div>
+<div>
+вход 2011-09-28 11:17:33 nor-Нечкина Марина Михайловна </div>
+<div>
+выход 2011-09-27 17:55:50 nor-Нечкина Марина Михайловна </div>
+<div>
+вход 2011-09-27 09:17:03 nor-Нечкина Марина Михайловна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'd29d80c8520b3d50edf50f20f4f2b07c';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">nor-OSA1</a>
+<div id="d29d80c8520b3d50edf50f20f4f2b07c" style="display: none;">
+<div>
+вход 2011-09-27 15:55:11 nor-Светлана Сиско </div>
+<div>
+выход 2011-09-27 15:51:10 nor-Светлана Сиско </div>
+<div>
+вход 2011-09-27 15:33:49 nor-Светлана Сиско </div>
+<div>
+выход 2011-09-27 15:26:41 nor-Светлана Сиско </div>
+<div>
+вход 2011-09-26 16:48:48 nor-Светлана Сиско </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '9003f11db95ab4d491ee6f682ff85b10';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">nor-PUSTOSCHILOVA</a>
+<div id="9003f11db95ab4d491ee6f682ff85b10" style="display: none;">
+<div>
+вход 2011-09-29 10:21:54 nor-Олеся Мишко </div>
+<div>
+выход 2011-09-28 17:59:07 nor-Олеся Мишко </div>
+<div>
+вход 2011-09-28 09:18:50 nor-Олеся Мишко </div>
+<div>
+выход 2011-09-27 17:58:44 nor-Олеся Мишко </div>
+<div>
+вход 2011-09-27 09:19:01 nor-Олеся Мишко </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '8dd0cef65a6302ec34c195e8af1d7076';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">nor-SEKRETAR-R331</a>
+<div id="8dd0cef65a6302ec34c195e8af1d7076" style="display: none;">
+<div>
+вход 2011-09-29 09:12:10 nor-Савыкина Кристина Андреевна </div>
+<div>
+выход 2011-09-28 17:49:32 nor-Савыкина Кристина Андреевна </div>
+<div>
+вход 2011-09-28 10:28:58 nor-Савыкина Кристина Андреевна </div>
+<div>
+вход 2011-09-28 09:25:12 nor-Савыкина Кристина Андреевна </div>
+<div>
+выход 2011-09-27 19:18:41 nor-Савыкина Кристина Андреевна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '1ee40ccc80901d04ba9356fa6ad19bcf';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">nor-SHR01WXP-KIRENS</a>
+<div id="1ee40ccc80901d04ba9356fa6ad19bcf" style="display: none;">
+<div>
+вход 2011-09-08 14:49:52 nor-SHR01WXP-KIRENS </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '9129774c059ab1461a338615466d5588';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">nor-UHNO</a>
+<div id="9129774c059ab1461a338615466d5588" style="display: none;">
+<div>
+вход 2011-09-29 09:55:11 nor-Юрий П. Юхно </div>
+<div>
+выход 2011-09-29 09:53:19 nor-Юрий П. Юхно </div>
+<div>
+вход 2011-09-29 09:20:13 nor-Юрий П. Юхно </div>
+<div>
+выход 2011-09-28 14:52:46 nor-Юрий П. Юхно </div>
+<div>
+вход 2011-09-28 09:16:47 nor-Юрий П. Юхно </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '54020606723b31e355206c33c16e74b4';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">nor-UO-R796</a>
+<div id="54020606723b31e355206c33c16e74b4" style="display: none;">
+<div>
+вход 2011-09-29 09:13:03 nor-Татьяна А. Юрастова </div>
+<div>
+выход 2011-09-28 17:57:01 nor-Татьяна А. Юрастова </div>
+<div>
+вход 2011-09-28 09:28:27 nor-Татьяна А. Юрастова </div>
+<div>
+выход 2011-09-27 18:09:22 nor-Татьяна А. Юрастова </div>
+<div>
+вход 2011-09-27 09:15:38 nor-Татьяна А. Юрастова </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'dc0519c2f5d279d66dda31fd586b681c';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">nor-VOLKOVS-NOUT</a>
+<div id="dc0519c2f5d279d66dda31fd586b681c" style="display: none;">
+<div>
+вход 2011-09-15 15:52:39 nor-Станислав Волков </div>
+<div>
+вход 2011-09-14 08:50:48 nor-Станислав Волков </div>
+<div>
+выход 2011-09-14 08:46:25 nor-Станислав Волков </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '63e855d92c7baeb4470519cd799c2d35';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">OKP-050</a>
+<div id="63e855d92c7baeb4470519cd799c2d35" style="display: none;">
+<div>
+выход 2011-09-08 17:15:04 Вершинин Константин Михайлович </div>
+<div>
+вход 2011-08-18 10:25:14 Вершинин Константин Михайлович </div>
+<div>
+выход 2011-08-18 10:16:28 Вершинин Константин Михайлович </div>
+<div>
+вход 2011-08-17 09:30:54 Вершинин Константин Михайлович </div>
+<div>
+выход 2011-08-16 18:04:26 Вершинин Константин Михайлович </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '60678d0678ea9e33d76a1d71d1b13903';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">OKP-054</a>
+<div id="60678d0678ea9e33d76a1d71d1b13903" style="display: none;">
+<div>
+вход 2011-09-29 09:16:43 Жукова Любовь Леонидовна </div>
+<div>
+выход 2011-09-28 18:18:17 Жукова Любовь Леонидовна </div>
+<div>
+вход 2011-09-28 09:18:11 Жукова Любовь Леонидовна </div>
+<div>
+выход 2011-09-27 18:04:30 Жукова Любовь Леонидовна </div>
+<div>
+вход 2011-09-27 09:02:22 Жукова Любовь Леонидовна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'ac512a90e7724f1389ba0ff63c1f31ec';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">OKP-297</a>
+<div id="ac512a90e7724f1389ba0ff63c1f31ec" style="display: none;">
+<div>
+вход 2011-09-29 09:08:06 Кучин Алексей Андреевич </div>
+<div>
+выход 2011-09-28 18:09:29 Кучин Алексей Андреевич </div>
+<div>
+вход 2011-09-28 09:08:29 Кучин Алексей Андреевич </div>
+<div>
+выход 2011-09-27 18:10:11 Кучин Алексей Андреевич </div>
+<div>
+вход 2011-09-27 09:15:54 Кучин Алексей Андреевич </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '98968ceb5a3eae6d32618f8c1766457f';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">OTP-ZAYTSEV397</a>
+<div id="98968ceb5a3eae6d32618f8c1766457f" style="display: none;">
+<div>
+вход 2011-09-26 10:05:48 Зайцев Михаил Юрьевич </div>
+<div>
+выход 2011-09-23 19:03:00 Зайцев Михаил Юрьевич </div>
+<div>
+вход 2011-09-23 10:22:14 Зайцев Михаил Юрьевич </div>
+<div>
+выход 2011-09-22 19:11:26 Зайцев Михаил Юрьевич </div>
+<div>
+вход 2011-09-19 10:19:07 Зайцев Михаил Юрьевич </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'd3eb991ccd013bf754cee7babea5c2d4';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">PETEMEVMV</a>
+<div id="d3eb991ccd013bf754cee7babea5c2d4" style="display: none;">
+<div>
+вход 2011-09-21 14:54:46 Петенев Максим Валерьевич </div>
+<div>
+выход 2011-09-21 14:51:27 Петенев Максим Валерьевич </div>
+<div>
+вход 2011-09-09 16:43:27 Петенев Максим Валерьевич </div>
+<div>
+выход 2011-08-26 18:41:40 Петенев Максим Валерьевич </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'fca86f038c6993d7ebb50df8f400c121';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">PRODAJ-047</a>
+<div id="fca86f038c6993d7ebb50df8f400c121" style="display: none;">
+<div>
+выход 2011-08-29 09:35:08 managers </div>
+<div>
+вход 2011-08-29 09:11:23 managers </div>
+<div>
+выход 2011-08-26 20:26:08 managers </div>
+<div>
+вход 2011-08-26 11:15:19 managers </div>
+<div>
+выход 2011-08-25 20:54:54 managers </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'e2bf63bd7c4c2422926f21e2d0882a42';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">PRODAJ-092</a>
+<div id="e2bf63bd7c4c2422926f21e2d0882a42" style="display: none;">
+<div>
+вход 2011-09-28 11:25:04 managers </div>
+<div>
+выход 2011-09-27 19:56:12 managers </div>
+<div>
+вход 2011-09-27 14:19:06 managers </div>
+<div>
+выход 2011-09-27 14:14:31 managers </div>
+<div>
+вход 2011-09-26 11:26:28 managers </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '6a3bdc3110351ed71b4a43ea04cc049c';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">PRODAJ-120</a>
+<div id="6a3bdc3110351ed71b4a43ea04cc049c" style="display: none;">
+<div>
+вход 2011-09-28 10:08:05 managers </div>
+<div>
+выход 2011-09-28 10:03:00 managers </div>
+<div>
+вход 2011-09-26 10:02:58 managers </div>
+<div>
+выход 2011-09-26 09:59:38 managers </div>
+<div>
+вход 2011-09-16 10:50:45 managers </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'a6f1fba06a3c0b91194bd60974dca15e';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">PRODAJ-129</a>
+<div id="a6f1fba06a3c0b91194bd60974dca15e" style="display: none;">
+<div>
+вход 2011-09-28 12:06:40 Ткачев Павел Александрович </div>
+<div>
+вход 2011-09-16 10:56:34 Ткачев Павел Александрович </div>
+<div>
+выход 2011-09-14 19:06:44 Ткачев Павел Александрович </div>
+<div>
+вход 2011-09-14 12:57:17 Ткачев Павел Александрович </div>
+<div>
+выход 2011-09-14 12:54:33 Ткачев Павел Александрович </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'a93f134fdb668a9a6bc32aedae62d0f4';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">PRODAJ-152</a>
+<div id="a93f134fdb668a9a6bc32aedae62d0f4" style="display: none;">
+<div>
+вход 2011-09-14 12:03:44 managers </div>
+<div>
+вход 2011-08-23 16:26:30 managers </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '27c32516b1664b63c2c899a7ccc5b3ae';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">PRODAJ-188</a>
+<div id="27c32516b1664b63c2c899a7ccc5b3ae" style="display: none;">
+<div>
+вход 2011-09-28 17:03:46 managers </div>
+<div>
+вход 2011-09-16 11:18:55 managers </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '55129e2136c5e738289979a394f44909';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">PRODAJ-213</a>
+<div id="55129e2136c5e738289979a394f44909" style="display: none;">
+<div>
+вход 2011-09-28 13:49:26 managers </div>
+<div>
+вход 2011-09-13 12:34:42 managers </div>
+<div>
+выход 2011-09-13 12:25:47 Шибанов А.Н. </div>
+<div>
+вход 2011-09-13 12:10:34 Шибанов А.Н. </div>
+<div>
+вход 2011-09-08 16:52:11 managers </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'bcb3d4a731945e639c7cbb851e36b201';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">PRODAJ-217</a>
+<div id="bcb3d4a731945e639c7cbb851e36b201" style="display: none;">
+<div>
+вход 2011-09-26 17:00:03 Корнаухов Андрей Викторовия </div>
+<div>
+выход 2011-09-26 16:49:42 Корнаухов Андрей Викторовия </div>
+<div>
+вход 2011-09-26 14:32:57 Корнаухов Андрей Викторовия </div>
+<div>
+вход 2011-09-23 11:37:19 Корнаухов Андрей Викторовия </div>
+<div>
+вход 2011-09-23 11:30:42 Корнаухов Андрей Викторовия </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '75d29c3b15f92d4e0332ceb79f58b015';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">PRODAJ-267</a>
+<div id="75d29c3b15f92d4e0332ceb79f58b015" style="display: none;">
+<div>
+вход 2011-09-21 17:22:01 managers </div>
+<div>
+вход 2011-09-21 17:04:25 managers </div>
+<div>
+выход 2011-09-21 17:03:55 managers </div>
+<div>
+выход 2011-09-21 16:59:30 managers </div>
+<div>
+вход 2011-09-14 16:16:34 managers </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '216683781699c2fd2e59b378f65f75a3';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">PRODAJ-395</a>
+<div id="216683781699c2fd2e59b378f65f75a3" style="display: none;">
+<div>
+вход 2011-09-27 15:21:20 managers </div>
+<div>
+вход 2011-09-15 13:49:53 managers </div>
+<div>
+выход 2011-09-14 19:38:14 managers </div>
+<div>
+вход 2011-09-14 18:49:31 managers </div>
+<div>
+вход 2011-09-12 14:57:32 managers </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '63a060e9a4e5e769d9154ecf50c05a78';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">RASCHGROUP-160</a>
+<div id="63a060e9a4e5e769d9154ecf50c05a78" style="display: none;">
+<div>
+вход 2011-09-29 07:55:10 Дрень Ольга Геннадьевна </div>
+<div>
+выход 2011-09-28 17:04:21 Дрень Ольга Геннадьевна </div>
+<div>
+вход 2011-09-28 08:03:27 Дрень Ольга Геннадьевна </div>
+<div>
+выход 2011-09-27 17:02:19 Дрень Ольга Геннадьевна </div>
+<div>
+вход 2011-09-27 07:58:51 Дрень Ольга Геннадьевна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'efebcc1d987d75cc7d1a3dbbaf9c07ac';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">RASCHGROUP-162</a>
+<div id="efebcc1d987d75cc7d1a3dbbaf9c07ac" style="display: none;">
+<div>
+вход 2011-09-29 07:50:00 Кушнарева Ирина Геннадьевна </div>
+<div>
+выход 2011-09-28 17:01:05 Кушнарева Ирина Геннадьевна </div>
+<div>
+вход 2011-09-28 08:18:12 Кушнарева Ирина Геннадьевна </div>
+<div>
+выход 2011-09-27 17:01:20 Кушнарева Ирина Геннадьевна </div>
+<div>
+вход 2011-09-27 08:50:42 Кушнарева Ирина Геннадьевна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '7bd8a630ad6a7f3317b811cf90170066';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">RASCHGROUP-259</a>
+<div id="7bd8a630ad6a7f3317b811cf90170066" style="display: none;">
+<div>
+вход 2011-09-29 08:44:53 Мельникова Светлана Станиславовна </div>
+<div>
+выход 2011-09-28 17:54:02 Мельникова Светлана Станиславовна </div>
+<div>
+вход 2011-09-28 08:43:12 Мельникова Светлана Станиславовна </div>
+<div>
+выход 2011-09-27 18:53:11 Мельникова Светлана Станиславовна </div>
+<div>
+вход 2011-09-27 08:47:28 Мельникова Светлана Станиславовна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '98a388a3301e838568a9c6ffffdb0590';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">RASCHGROUP-332</a>
+<div id="98a388a3301e838568a9c6ffffdb0590" style="display: none;">
+<div>
+вход 2011-09-28 07:53:51 Клубенко Светлана Анатольевна </div>
+<div>
+выход 2011-09-27 17:01:24 Клубенко Светлана Анатольевна </div>
+<div>
+вход 2011-09-27 08:09:52 Клубенко Светлана Анатольевна </div>
+<div>
+выход 2011-09-26 16:56:42 Клубенко Светлана Анатольевна </div>
+<div>
+вход 2011-09-26 13:40:46 Клубенко Светлана Анатольевна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '72ceff250beafcc560faeb6b24791b32';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">RASCHGROUP-337</a>
+<div id="72ceff250beafcc560faeb6b24791b32" style="display: none;">
+<div>
+вход 2011-09-29 14:45:53 Толстикова Лилия Анатольевна </div>
+<div>
+выход 2011-09-29 12:12:37 Толстикова Лилия Анатольевна </div>
+<div>
+вход 2011-09-29 08:00:10 Толстикова Лилия Анатольевна </div>
+<div>
+выход 2011-09-28 17:00:41 Толстикова Лилия Анатольевна </div>
+<div>
+вход 2011-09-28 07:46:47 Толстикова Лилия Анатольевна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'bb7612104bf7d13930cca5f92708c36e';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">RASCHGROUP-362</a>
+<div id="bb7612104bf7d13930cca5f92708c36e" style="display: none;">
+<div>
+выход 2011-09-15 16:57:38 Миронова Ольга Александровна </div>
+<div>
+вход 2011-09-15 08:02:22 Миронова Ольга Александровна </div>
+<div>
+выход 2011-09-14 17:04:40 Миронова Ольга Александровна </div>
+<div>
+вход 2011-09-14 10:47:32 Миронова Ольга Александровна </div>
+<div>
+выход 2011-09-14 10:45:42 Миронова Ольга Александровна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '090237bb91fd0d8cde45ec58edb67b57';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">RECEPTION</a>
+<div id="090237bb91fd0d8cde45ec58edb67b57" style="display: none;">
+<div>
+выход 2011-09-02 20:15:55 Иванова Татьяна Александровна </div>
+<div>
+вход 2011-09-02 09:06:25 Иванова Татьяна Александровна </div>
+<div>
+выход 2011-09-01 18:07:01 Иванова Татьяна Александровна </div>
+<div>
+вход 2011-09-01 17:25:58 Иванова Татьяна Александровна </div>
+<div>
+выход 2011-09-01 17:22:07 Иванова Татьяна Александровна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '0584f08e093894a55a31c962ee3d4dc7';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">SEKRETAR</a>
+<div id="0584f08e093894a55a31c962ee3d4dc7" style="display: none;">
+<div>
+вход 2011-09-29 07:27:10 Глазкова Наталья Николаевна </div>
+<div>
+выход 2011-09-28 17:03:31 Глазкова Наталья Николаевна </div>
+<div>
+вход 2011-09-26 08:39:42 Глазкова Наталья Николаевна </div>
+<div>
+выход 2011-09-23 16:32:53 Глазкова Наталья Николаевна </div>
+<div>
+вход 2011-09-23 07:32:49 Глазкова Наталья Николаевна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '4f2c7de5e16cff94112621ce8444906f';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">TO-005</a>
+<div id="4f2c7de5e16cff94112621ce8444906f" style="display: none;">
+<div>
+вход 2011-09-27 13:01:03 Козлов Андрей Юрьевич </div>
+<div>
+выход 2011-09-27 11:49:12 Козлов Андрей Юрьевич </div>
+<div>
+вход 2011-09-26 13:00:30 Козлов Андрей Юрьевич </div>
+<div>
+вход 2011-09-22 09:07:53 Козлов Андрей Юрьевич </div>
+<div>
+вход 2011-09-19 14:08:12 Козлов Андрей Юрьевич </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '510d36a36f94e6f7f72a211c9bfd018e';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">TO-008</a>
+<div id="510d36a36f94e6f7f72a211c9bfd018e" style="display: none;">
+<div>
+выход 2011-09-28 16:52:08 Шибанов Андрей Николаевич </div>
+<div>
+вход 2011-09-28 16:20:27 Шибанов Андрей Николаевич </div>
+<div>
+выход 2011-09-23 18:04:55 Малахов Александр Александрович </div>
+<div>
+вход 2011-09-23 08:42:22 Малахов Александр Александрович </div>
+<div>
+выход 2011-09-22 22:51:45 Шибанов Андрей Николаевич </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '6d80409a9bef2c6ba9d0be16c9d6dd2e';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">TO-091</a>
+<div id="6d80409a9bef2c6ba9d0be16c9d6dd2e" style="display: none;">
+<div>
+выход 2011-08-24 17:04:30 Бегинин Владимир </div>
+<div>
+вход 2011-08-24 17:03:32 Бегинин Владимир </div>
+<div>
+выход 2011-08-24 16:59:59 Бегинин Владимир </div>
+<div>
+вход 2011-08-24 16:45:45 Бегинин Владимир </div>
+<div>
+выход 2011-08-24 16:42:02 Дмитрий И. Пьянков </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '8d321eff419d91437affaca20db940a9';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">TO-099</a>
+<div id="8d321eff419d91437affaca20db940a9" style="display: none;">
+<div>
+вход 2011-09-26 12:08:55 Бегинин Владимир </div>
+<div>
+вход 2011-09-19 09:23:09 Бегинин Владимир </div>
+<div>
+вход 2011-09-15 15:17:31 Бегинин Владимир </div>
+<div>
+выход 2011-09-15 14:58:56 Бегинин Владимир </div>
+<div>
+вход 2011-09-12 16:04:52 Бегинин Владимир </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'a0bc1412d0a7b0457d8ce970aee36320';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">TO-196</a>
+<div id="a0bc1412d0a7b0457d8ce970aee36320" style="display: none;">
+<div>
+вход 2011-09-28 14:49:38 Бегинин Владимир </div>
+<div>
+выход 2011-09-26 12:13:45 Бегинин Владимир </div>
+<div>
+вход 2011-09-26 12:10:33 Бегинин Владимир </div>
+<div>
+выход 2011-09-26 11:33:08 Бегинин Владимир </div>
+<div>
+вход 2011-09-26 11:22:48 Бегинин Владимир </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '2ff5422bd521bd1cf4140de099ff1798';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">TO-204</a>
+<div id="2ff5422bd521bd1cf4140de099ff1798" style="display: none;">
+<div>
+вход 2011-09-26 15:37:04 Пьянков Дмитрий Игоревич </div>
+<div>
+выход 2011-09-26 11:08:15 Еникеев Максим Радикович </div>
+<div>
+вход 2011-09-25 14:09:38 Еникеев Максим Радикович </div>
+<div>
+выход 2011-09-24 14:13:16 Малахов Александр Александрович </div>
+<div>
+выход 2011-09-17 19:03:23 Дмитрий И. Пьянков </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = '2933a2572e0e9f2cbbb3a0bbabfa01b3';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">TO-MASHA</a>
+<div id="2933a2572e0e9f2cbbb3a0bbabfa01b3" style="display: none;">
+<div>
+выход 2011-09-29 13:51:42 Попова Мария Михайловна </div>
+<div>
+выход 2011-09-29 13:44:26 Попова Мария Михайловна </div>
+<div>
+вход 2011-09-25 09:37:53 Попова Мария Михайловна </div>
+<div>
+выход 2011-09-25 09:35:35 Попова Мария Михайловна </div>
+<div>
+вход 2011-09-19 08:27:33 Попова Мария Михайловна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'd2be0dabe8f820d818d4f25acf79cf47';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">VYCHYZANINA-BUH</a>
+<div id="d2be0dabe8f820d818d4f25acf79cf47" style="display: none;">
+<div>
+вход 2011-09-29 09:13:00 Вычужанина Светлана Сергеевна </div>
+<div>
+выход 2011-09-28 17:46:57 Вычужанина Светлана Сергеевна </div>
+<div>
+вход 2011-09-28 08:58:51 Вычужанина Светлана Сергеевна </div>
+<div>
+выход 2011-09-27 17:46:18 Вычужанина Светлана Сергеевна </div>
+<div>
+вход 2011-09-27 09:17:49 Вычужанина Светлана Сергеевна </div>
+</div>
+</div>
+<div>
+                 <a href="#" onclick="
+                                 var id = 'fa214c7d06a183d25be65157fe858731';
+                                 if (document.getElementById(id).style.display != 'block')
+                                 {document.getElementById(id).style.display = 'block'}
+                                 else {document.getElementById(id).style.display = 'none'}
+                                 return false;">ZAMENA-141</a>
+<div id="fa214c7d06a183d25be65157fe858731" style="display: none;">
+<div>
+выход 2011-08-22 13:39:24 Михайлюк Юлия Александровна </div>
+</div>
+</div>
+</td>
+
+
+
+</tr>
+</table>
+    </body>
+</html>

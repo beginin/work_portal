@@ -1,0 +1,11 @@
+
+RewriteEngine on
+
+RewriteRule ^user_guide/ - [L]
+RewriteRule ^css/ - [L]
+RewriteRule ^js/ - [L]
+
+RewriteRule ^out/ - [L]
+
+RewriteCond $1 !^(index\.php|images|robots\.txt)
+RewriteRule ^(.*)$ /index.php/$1 [L]
