@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE GraphXML SYSTEM "GraphXML.dtd">
+<GraphXML>
+<graph id="My First Graph">
+<!-- Here come your nodes -->
+<node name="node1">
+<label>Label of 1 node</label>
+</node>
+
+<node name="node2">
+<label>Label of 2 node</label>
+</node>
+
+<node name="node3">
+<label>Label of 3 node</label>
+</node>
+
+<node name="node4">
+<label>Label of 4 node</label>
+</node>
+<!-- Here come the edges -->
+<edge source="node1" target="node2" />
+<edge source="node1" target="node3" />
+<edge source="node1" target="node4" />
+</graph>
+</GraphXML>

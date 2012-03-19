@@ -4,6 +4,7 @@ RewriteEngine on
 RewriteRule ^user_guide/ - [L]
 RewriteRule ^css/ - [L]
 RewriteRule ^js/ - [L]
+RewriteRule ^app/ - [L]
 
 RewriteRule ^out/ - [L]
 

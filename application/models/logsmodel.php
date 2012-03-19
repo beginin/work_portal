@@ -69,6 +69,7 @@ function get_current_comps_with_user()
         
         $i++;
     }
+   
     return $arr;
 }
 

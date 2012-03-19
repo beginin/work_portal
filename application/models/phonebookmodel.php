@@ -19,11 +19,14 @@ function  get_all_contact()
     die('Invalid LDAP:');
     ldap_set_option($dc, LDAP_OPT_PROTOCOL_VERSION, 3);
     ldap_set_option($dc, LDAP_OPT_REFERRALS, 0);
+    
     if ($dc) {
         ldap_bind($dc, $srv_login, $srv_password);
        $result = ldap_search($dc, $dn, $filter, $attr);
         $result_entries = ldap_get_entries($dc, $result);
         ldap_unbind($dc);
+        
+        
         return $result_entries;
     }    
     

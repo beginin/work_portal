@@ -21,19 +21,20 @@ class Welcome extends CI_Controller {
         
         public function index()
 	{
-                $this->load->view('header');
-		$this->load->view('welcome_message');
-                $this->load->view('footer');
+                $data['mainContent'] = $this->load->view('welcome_message',"", true);
+                $data['homeTitle'] = 'page Title';
+                $this->load->view('Template_page', $data);
+            
               
 	}
         
-        public function phonebook()
-	{
-            $data['title']="Телефонный справочник";
-            $this->load->view('header',$data);
-            $this->load->view('phonebook',$data);
-            $this->load->view('footer',$data);
-	}
+        //public function phonebook()
+	//{
+        //    $data['title']="Телефонный справочник";
+       //     $this->load->view('header',$data);
+       //     $this->load->view('phonebook',$data);
+       //     $this->load->view('footer',$data);
+	//}
         
 }
 
